@@ -62,13 +62,35 @@ fig = px.line(
     color_discrete_sequence=px.colors.qualitative.Bold
 )
 
-fig.update_traces(mode='lines+markers', line_shape='spline')
+# Apply line shape and marker settings
+fig.update_traces(
+    mode='lines+markers' if show_markers else 'lines',
+    line_shape='spline' if line_style == "Smooth (Spline)" else 'linear'
+)
 
+# Add annotation for peak month
+peak_row = filtered_data_grouped.loc[filtered_data_grouped['Profit'].idxmax()]
+fig.add_annotation(
+    x=peak_row['Month'],
+    y=peak_row['Profit'],
+    text=f"🏆 Peak: ${peak_row['Profit']:,.0f}",
+    showarrow=True,
+    arrowhead=2,
+    ax=20,
+    ay=-30,
+    font=dict(size=12, color="black"),
+    bgcolor="yellow",
+    bordercolor="black",
+    borderwidth=2
+)
+
+# Update layout
 fig.update_layout(
     yaxis=dict(range=[0, filtered_data_grouped['Profit'].max() * 1.1]),
     xaxis_title="Month",
     yaxis_title="Profit"
 )
 
+# Show plot
 st.plotly_chart(fig, use_container_width=True)
 st.dataframe(pivot_data.reset_index())
