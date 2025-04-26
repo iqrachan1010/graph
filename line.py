@@ -1,4 +1,4 @@
-#Line grapgh 
+#line
 
 import streamlit as st
 import pandas as pd
@@ -13,10 +13,10 @@ categories = data['Category'].unique()
 st.title("Sales Profit Analysis")
 
 # Filters
-selected_category = st.selectbox("Select Category", categories)
+selected_categories = st.multiselect("Select Category(s)", categories, default=categories)
 
-# Filter data by selected category
-filtered_data = data[data['Category'] == selected_category]
+# Filter data by selected categories
+filtered_data = data[data['Category'].isin(selected_categories)]
 
 # Optional Sub-category filter
 sub_categories = filtered_data['Sub-Category'].unique()
@@ -25,17 +25,22 @@ sub_category = st.selectbox("Select Sub-Category (Optional)", ['All'] + list(sub
 if sub_category != 'All':
     filtered_data = filtered_data[filtered_data['Sub-Category'] == sub_category]
 
-# Year selection
+# Extract Year and Month
 filtered_data['Year'] = pd.to_datetime(filtered_data['Year-Month']).dt.year
-selected_year = st.selectbox("Select Year", ['All'] + sorted(filtered_data['Year'].unique().tolist()))
+filtered_data['Month'] = pd.to_datetime(filtered_data['Year-Month']).dt.strftime('%b')
+
+# Group by Month and Category
+filtered_data_grouped = filtered_data.groupby(['Year', 'Month', 'Category'])['Profit'].sum().reset_index()
+
+# Year selection below the x-axis
+selected_year = st.selectbox("Select Year", ['All'] + sorted(filtered_data_grouped['Year'].unique().tolist()))
 
 if selected_year != 'All':
-    filtered_data = filtered_data[filtered_data['Year'] == selected_year]
+    filtered_data_grouped = filtered_data_grouped[filtered_data_grouped['Year'] == selected_year]
 
-# Group by Year-Month
-filtered_data_grouped = filtered_data.groupby('Year-Month')['Profit'].sum().reset_index()
-filtered_data_grouped = filtered_data_grouped.sort_values('Year-Month')
+# Pivot data for plotting
+pivot_data = filtered_data_grouped.pivot_table(index='Month', columns='Category', values='Profit', fill_value=0)
 
-# Display chart and data
-st.line_chart(filtered_data_grouped.set_index('Year-Month')['Profit'])
-st.dataframe(filtered_data_grouped)
+# Display chart with labels
+st.line_chart(pivot_data, use_container_width=True, y_axis_title="Profit")
+st.dataframe(pivot_data.reset_index())
