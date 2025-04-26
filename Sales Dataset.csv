@@ -1,0 +1,1195 @@
+Profit,Quantity,Category,Sub-Category,PaymentMode,State,City,Year-Month
+1275,5,Electronics,Electronic Games,UPI,Florida,Miami,2023-06
+1275,5,Electronics,Electronic Games,UPI,Illinois,Chicago,2024-12
+1275,5,Electronics,Electronic Games,UPI,New York,Buffalo,2021-07
+1330,14,Electronics,Printers,UPI,Florida,Miami,2023-06
+1330,14,Electronics,Printers,UPI,Illinois,Chicago,2024-12
+1330,14,Electronics,Printers,UPI,New York,Buffalo,2021-07
+185,12,Office Supplies,Pens,Debit Card,Florida,Orlando,2024-05
+185,12,Office Supplies,Pens,Debit Card,Florida,Miami,2021-10
+117,10,Electronics,Laptops,EMI,California,Los Angeles,2022-11
+3551,16,Furniture,Tables,Credit Card,California,Los Angeles,2022-11
+734,19,Furniture,Chairs,UPI,New York,New York City,2023-11
+462,14,Office Supplies,Pens,Credit Card,New York,New York City,2020-03
+2812,1,Office Supplies,Markers,Debit Card,Florida,Orlando,2020-05
+1046,15,Furniture,Sofas,Credit Card,Florida,Orlando,2020-05
+78,9,Furniture,Tables,UPI,Florida,Orlando,2020-05
+1098,10,Office Supplies,Pens,UPI,Illinois,Springfield,2023-11
+262,18,Office Supplies,Paper,COD,Illinois,Springfield,2023-11
+133,6,Office Supplies,Paper,Credit Card,New York,Rochester,2024-12
+2685,2,Furniture,Tables,Credit Card,New York,Rochester,2024-12
+265,1,Office Supplies,Paper,UPI,Texas,Dallas,2025-02
+265,1,Office Supplies,Paper,UPI,California,San Diego,2024-01
+2971,19,Office Supplies,Binders,Debit Card,California,San Diego,2020-11
+894,20,Office Supplies,Binders,COD,California,San Diego,2020-11
+414,11,Electronics,Phones,UPI,New York,Rochester,2024-05
+1644,18,Office Supplies,Binders,Credit Card,New York,Rochester,2024-05
+72,17,Office Supplies,Paper,COD,New York,Rochester,2024-05
+1821,17,Electronics,Electronic Games,EMI,Texas,Austin,2022-01
+1180,20,Office Supplies,Binders,COD,New York,New York City,2021-12
+1180,20,Office Supplies,Binders,COD,California,San Francisco,2023-02
+760,20,Office Supplies,Pens,Debit Card,California,San Francisco,2022-10
+760,20,Office Supplies,Pens,Debit Card,Ohio,Columbus,2022-01
+1606,4,Office Supplies,Paper,COD,Florida,Orlando,2023-12
+554,11,Office Supplies,Pens,COD,Florida,Orlando,2023-12
+1848,12,Electronics,Phones,Credit Card,California,San Diego,2023-07
+1848,12,Electronics,Phones,Credit Card,Ohio,Cincinnati,2021-05
+866,11,Furniture,Bookcases,Credit Card,California,San Diego,2023-07
+866,11,Furniture,Bookcases,Credit Card,Ohio,Cincinnati,2021-05
+630,15,Furniture,Sofas,EMI,Florida,Orlando,2022-10
+963,1,Furniture,Tables,Debit Card,Florida,Orlando,2022-10
+2937,12,Office Supplies,Markers,UPI,California,San Francisco,2024-08
+1696,3,Office Supplies,Pens,COD,California,San Francisco,2024-08
+2413,12,Electronics,Electronic Games,COD,California,San Francisco,2024-08
+2632,8,Office Supplies,Binders,COD,Ohio,Cleveland,2022-01
+2632,8,Office Supplies,Binders,COD,New York,Rochester,2020-10
+2632,8,Office Supplies,Binders,COD,California,Los Angeles,2023-08
+205,17,Electronics,Phones,UPI,Ohio,Cleveland,2022-01
+205,17,Electronics,Phones,UPI,New York,Rochester,2020-10
+205,17,Electronics,Phones,UPI,California,Los Angeles,2023-08
+573,6,Furniture,Tables,EMI,California,San Diego,2024-12
+573,6,Furniture,Tables,EMI,Ohio,Cincinnati,2021-06
+573,6,Furniture,Tables,EMI,Texas,Austin,2023-05
+573,6,Furniture,Tables,EMI,Texas,Dallas,2021-10
+1014,5,Electronics,Printers,UPI,California,San Diego,2024-12
+1014,5,Electronics,Printers,UPI,Ohio,Cincinnati,2021-06
+1014,5,Electronics,Printers,UPI,Texas,Austin,2023-05
+1014,5,Electronics,Printers,UPI,Texas,Dallas,2021-10
+648,18,Furniture,Tables,EMI,Ohio,Cincinnati,2022-09
+1538,12,Furniture,Sofas,COD,Florida,Miami,2022-03
+451,10,Furniture,Tables,Debit Card,Florida,Orlando,2022-02
+451,10,Furniture,Tables,Debit Card,Texas,Houston,2021-04
+3192,3,Furniture,Chairs,COD,Florida,Orlando,2022-02
+3192,3,Furniture,Chairs,COD,Texas,Houston,2021-04
+1712,19,Furniture,Sofas,Credit Card,Florida,Orlando,2022-02
+1712,19,Furniture,Sofas,Credit Card,Texas,Houston,2021-04
+172,20,Furniture,Tables,Debit Card,New York,Buffalo,2020-11
+2059,14,Furniture,Tables,UPI,New York,Buffalo,2020-11
+151,3,Furniture,Tables,Credit Card,New York,Buffalo,2020-11
+93,2,Office Supplies,Paper,Debit Card,Ohio,Cleveland,2024-12
+93,2,Office Supplies,Paper,Debit Card,California,Los Angeles,2023-04
+1034,3,Furniture,Sofas,COD,Ohio,Cleveland,2024-12
+1034,3,Furniture,Sofas,COD,California,Los Angeles,2023-04
+248,3,Electronics,Phones,Credit Card,Ohio,Cleveland,2024-12
+248,3,Electronics,Phones,Credit Card,California,Los Angeles,2023-04
+361,10,Office Supplies,Pens,Debit Card,Ohio,Cleveland,2024-12
+361,10,Office Supplies,Pens,Debit Card,California,Los Angeles,2023-04
+528,1,Office Supplies,Pens,Credit Card,Florida,Miami,2024-01
+167,16,Office Supplies,Binders,EMI,Florida,Miami,2024-01
+55,1,Furniture,Bookcases,UPI,Florida,Tampa,2022-01
+55,1,Furniture,Bookcases,UPI,New York,Buffalo,2022-12
+3508,12,Furniture,Tables,UPI,California,San Diego,2023-07
+1178,16,Office Supplies,Binders,Credit Card,California,San Diego,2023-07
+1175,6,Electronics,Electronic Games,Debit Card,California,San Diego,2023-07
+484,3,Furniture,Sofas,Credit Card,California,San Diego,2023-07
+1239,11,Electronics,Phones,Debit Card,New York,Buffalo,2025-03
+1239,11,Electronics,Phones,Debit Card,Ohio,Cleveland,2024-09
+3104,19,Office Supplies,Pens,EMI,New York,Buffalo,2025-03
+3104,19,Office Supplies,Pens,EMI,Ohio,Cleveland,2024-09
+1192,4,Office Supplies,Markers,UPI,New York,New York City,2020-04
+705,16,Office Supplies,Pens,Credit Card,New York,New York City,2020-04
+727,5,Electronics,Electronic Games,Credit Card,Illinois,Springfield,2022-06
+727,5,Electronics,Electronic Games,Credit Card,Florida,Tampa,2021-03
+727,5,Electronics,Electronic Games,Credit Card,Ohio,Cincinnati,2022-02
+622,10,Furniture,Chairs,UPI,Ohio,Cleveland,2022-03
+622,10,Furniture,Chairs,UPI,Illinois,Peoria,2022-11
+253,15,Furniture,Bookcases,Debit Card,Florida,Orlando,2021-11
+465,5,Electronics,Printers,UPI,Florida,Orlando,2021-11
+277,16,Furniture,Tables,COD,Florida,Miami,2021-08
+277,16,Furniture,Tables,COD,Ohio,Columbus,2022-05
+1958,16,Furniture,Chairs,Credit Card,Texas,Houston,2023-07
+1801,11,Office Supplies,Markers,Credit Card,Texas,Houston,2023-07
+1673,18,Office Supplies,Markers,COD,Texas,Houston,2023-07
+2873,4,Furniture,Chairs,Debit Card,California,Los Angeles,2020-08
+2873,4,Furniture,Chairs,Debit Card,New York,Rochester,2022-04
+294,7,Furniture,Sofas,Debit Card,Texas,Austin,2022-12
+95,20,Electronics,Printers,EMI,Texas,Dallas,2024-12
+714,13,Electronics,Laptops,EMI,Texas,Austin,2022-02
+714,13,Electronics,Laptops,EMI,California,San Diego,2021-12
+1010,8,Furniture,Tables,UPI,Texas,Austin,2022-02
+1010,8,Furniture,Tables,UPI,California,San Diego,2021-12
+2899,5,Electronics,Laptops,Debit Card,Texas,Austin,2022-02
+2899,5,Electronics,Laptops,Debit Card,California,San Diego,2021-12
+586,17,Furniture,Sofas,EMI,Florida,Miami,2020-05
+526,19,Electronics,Phones,Credit Card,Texas,Dallas,2022-12
+526,19,Electronics,Phones,Credit Card,California,San Francisco,2024-09
+825,8,Electronics,Phones,Credit Card,Texas,Dallas,2022-12
+825,8,Electronics,Phones,Credit Card,California,San Francisco,2024-09
+92,12,Furniture,Bookcases,COD,California,San Francisco,2023-05
+92,12,Furniture,Bookcases,COD,New York,New York City,2021-03
+92,12,Furniture,Bookcases,COD,California,San Francisco,2021-03
+92,12,Furniture,Bookcases,COD,Ohio,Cleveland,2023-04
+3696,20,Office Supplies,Pens,Debit Card,New York,Rochester,2021-10
+3696,20,Office Supplies,Pens,Debit Card,Texas,Austin,2022-04
+3696,20,Office Supplies,Pens,Debit Card,New York,Rochester,2022-08
+3420,7,Office Supplies,Binders,UPI,New York,Rochester,2021-10
+3420,7,Office Supplies,Binders,UPI,Texas,Austin,2022-04
+3420,7,Office Supplies,Binders,UPI,New York,Rochester,2022-08
+3158,20,Electronics,Printers,Credit Card,California,San Francisco,2024-09
+3158,20,Electronics,Printers,Credit Card,Ohio,Cleveland,2021-05
+1227,14,Furniture,Chairs,EMI,California,San Francisco,2024-09
+1227,14,Furniture,Chairs,EMI,Ohio,Cleveland,2021-05
+670,2,Office Supplies,Paper,COD,Florida,Tampa,2024-07
+147,5,Furniture,Sofas,Credit Card,Florida,Tampa,2024-07
+2341,2,Furniture,Chairs,EMI,Florida,Tampa,2024-07
+236,2,Electronics,Electronic Games,COD,Florida,Tampa,2024-07
+600,7,Office Supplies,Binders,Credit Card,Florida,Orlando,2024-02
+1942,19,Electronics,Phones,COD,Florida,Orlando,2024-02
+4518,8,Furniture,Tables,Credit Card,Texas,Dallas,2021-11
+934,5,Furniture,Sofas,Debit Card,Texas,Dallas,2021-11
+149,4,Electronics,Laptops,EMI,Texas,Dallas,2021-11
+1169,10,Office Supplies,Binders,COD,California,San Francisco,2024-02
+1169,10,Office Supplies,Binders,COD,Illinois,Springfield,2021-09
+1169,10,Office Supplies,Binders,COD,California,San Diego,2021-09
+1490,1,Office Supplies,Binders,Debit Card,California,San Francisco,2024-02
+1490,1,Office Supplies,Binders,Debit Card,Illinois,Springfield,2021-09
+1490,1,Office Supplies,Binders,Debit Card,California,San Diego,2021-09
+641,20,Office Supplies,Markers,Credit Card,California,Los Angeles,2024-07
+817,10,Furniture,Tables,Debit Card,California,Los Angeles,2024-07
+520,12,Office Supplies,Paper,Debit Card,California,Los Angeles,2024-07
+1411,15,Office Supplies,Paper,Debit Card,California,Los Angeles,2024-07
+350,1,Furniture,Chairs,Credit Card,Illinois,Springfield,2023-02
+2433,12,Office Supplies,Binders,Credit Card,Illinois,Springfield,2023-02
+647,1,Office Supplies,Pens,Credit Card,Illinois,Springfield,2023-02
+4401,18,Office Supplies,Pens,Credit Card,Ohio,Columbus,2022-08
+2107,7,Electronics,Phones,UPI,Illinois,Chicago,2022-12
+2107,7,Electronics,Phones,UPI,Texas,Austin,2024-04
+230,3,Furniture,Tables,Credit Card,Illinois,Chicago,2022-12
+230,3,Furniture,Tables,Credit Card,Texas,Austin,2024-04
+525,7,Furniture,Sofas,Credit Card,Illinois,Chicago,2022-12
+525,7,Furniture,Sofas,Credit Card,Texas,Austin,2024-04
+586,18,Furniture,Sofas,UPI,Illinois,Chicago,2022-12
+586,18,Furniture,Sofas,UPI,Texas,Austin,2024-04
+197,11,Electronics,Laptops,Credit Card,Texas,Austin,2022-01
+2571,16,Furniture,Tables,COD,Texas,Dallas,2022-06
+2571,16,Furniture,Tables,COD,Florida,Orlando,2021-11
+2571,16,Furniture,Tables,COD,California,Los Angeles,2022-08
+3056,13,Office Supplies,Markers,Credit Card,Texas,Dallas,2022-06
+3056,13,Office Supplies,Markers,Credit Card,Florida,Orlando,2021-11
+3056,13,Office Supplies,Markers,Credit Card,California,Los Angeles,2022-08
+1221,14,Furniture,Bookcases,UPI,Texas,Dallas,2022-06
+1221,14,Furniture,Bookcases,UPI,Florida,Orlando,2021-11
+1221,14,Furniture,Bookcases,UPI,California,Los Angeles,2022-08
+241,11,Furniture,Sofas,COD,Texas,Austin,2021-11
+241,11,Furniture,Sofas,COD,Ohio,Cincinnati,2023-03
+1598,20,Furniture,Bookcases,COD,New York,Rochester,2023-12
+1581,10,Office Supplies,Paper,Debit Card,Florida,Miami,2024-05
+1581,10,Office Supplies,Paper,Debit Card,Florida,Tampa,2020-05
+349,11,Furniture,Tables,Credit Card,Florida,Miami,2024-05
+349,11,Furniture,Tables,Credit Card,Florida,Tampa,2020-05
+793,16,Furniture,Chairs,Credit Card,New York,Buffalo,2021-08
+2624,8,Office Supplies,Binders,COD,Texas,Dallas,2024-11
+281,20,Electronics,Printers,COD,Texas,Dallas,2024-11
+2271,8,Office Supplies,Paper,EMI,Florida,Orlando,2021-12
+1610,1,Electronics,Phones,EMI,Florida,Orlando,2021-12
+391,14,Furniture,Tables,UPI,Florida,Tampa,2024-07
+322,13,Office Supplies,Binders,COD,Florida,Tampa,2024-07
+279,13,Office Supplies,Markers,Debit Card,Florida,Miami,2024-06
+1266,6,Office Supplies,Paper,Debit Card,Florida,Miami,2024-06
+105,1,Furniture,Tables,COD,Illinois,Chicago,2024-05
+3010,7,Office Supplies,Pens,COD,Illinois,Chicago,2024-05
+4812,16,Office Supplies,Paper,UPI,New York,Buffalo,2020-10
+4812,16,Office Supplies,Paper,UPI,Florida,Orlando,2022-08
+4812,16,Office Supplies,Paper,UPI,Illinois,Springfield,2021-10
+1185,7,Office Supplies,Paper,UPI,New York,Buffalo,2020-10
+1185,7,Office Supplies,Paper,UPI,Florida,Orlando,2022-08
+1185,7,Office Supplies,Paper,UPI,Illinois,Springfield,2021-10
+851,4,Electronics,Printers,Credit Card,California,Los Angeles,2022-02
+76,13,Furniture,Sofas,UPI,California,Los Angeles,2022-02
+457,13,Electronics,Printers,EMI,Ohio,Cleveland,2023-09
+374,8,Office Supplies,Pens,EMI,Illinois,Peoria,2021-01
+1852,1,Electronics,Laptops,UPI,Illinois,Peoria,2021-01
+1176,1,Electronics,Phones,COD,Texas,Houston,2020-08
+1176,1,Electronics,Phones,COD,Illinois,Chicago,2023-04
+1176,1,Electronics,Phones,COD,California,San Francisco,2023-12
+1125,5,Furniture,Tables,Debit Card,Texas,Houston,2020-08
+1125,5,Furniture,Tables,Debit Card,Illinois,Chicago,2023-04
+1125,5,Furniture,Tables,Debit Card,California,San Francisco,2023-12
+253,14,Electronics,Printers,Credit Card,Texas,Houston,2020-08
+253,14,Electronics,Printers,Credit Card,Illinois,Chicago,2023-04
+253,14,Electronics,Printers,Credit Card,California,San Francisco,2023-12
+1239,5,Furniture,Sofas,Debit Card,Texas,Houston,2020-08
+1239,5,Furniture,Sofas,Debit Card,Illinois,Chicago,2023-04
+1239,5,Furniture,Sofas,Debit Card,California,San Francisco,2023-12
+1029,20,Office Supplies,Markers,Credit Card,Florida,Miami,2022-03
+775,12,Furniture,Tables,Debit Card,Illinois,Springfield,2021-08
+2213,15,Furniture,Bookcases,EMI,Illinois,Springfield,2021-08
+3826,7,Furniture,Bookcases,UPI,Florida,Miami,2020-12
+3826,7,Furniture,Bookcases,UPI,Florida,Tampa,2023-07
+2211,13,Furniture,Sofas,EMI,California,San Francisco,2023-08
+2211,13,Furniture,Sofas,EMI,Illinois,Chicago,2021-02
+2211,13,Furniture,Sofas,EMI,Illinois,Peoria,2022-09
+2211,13,Furniture,Sofas,EMI,New York,Buffalo,2022-05
+163,1,Furniture,Sofas,UPI,California,San Francisco,2021-05
+2842,18,Electronics,Electronic Games,UPI,Illinois,Peoria,2024-07
+301,9,Office Supplies,Binders,UPI,Ohio,Cleveland,2024-12
+771,6,Office Supplies,Binders,EMI,Ohio,Cleveland,2024-12
+831,2,Furniture,Tables,EMI,Ohio,Cleveland,2024-12
+2797,10,Electronics,Phones,UPI,Illinois,Peoria,2022-12
+1037,3,Office Supplies,Paper,COD,Illinois,Springfield,2022-10
+1806,9,Electronics,Printers,COD,Illinois,Springfield,2022-10
+3741,17,Electronics,Printers,UPI,Florida,Miami,2021-03
+3741,17,Electronics,Printers,UPI,Texas,Dallas,2025-01
+3457,16,Office Supplies,Markers,Debit Card,Florida,Miami,2021-03
+3457,16,Office Supplies,Markers,Debit Card,Texas,Dallas,2025-01
+4339,12,Office Supplies,Pens,COD,Texas,Houston,2021-03
+2356,18,Electronics,Printers,Debit Card,Texas,Houston,2021-03
+334,10,Electronics,Electronic Games,Debit Card,Texas,Houston,2021-03
+3033,16,Office Supplies,Markers,COD,California,San Francisco,2020-06
+3033,16,Office Supplies,Markers,COD,New York,Buffalo,2023-09
+234,3,Furniture,Sofas,UPI,New York,Rochester,2023-06
+424,7,Electronics,Electronic Games,Debit Card,New York,Rochester,2023-06
+3079,20,Electronics,Laptops,COD,New York,Rochester,2021-03
+2807,6,Electronics,Electronic Games,Credit Card,New York,Rochester,2021-03
+400,8,Office Supplies,Pens,Debit Card,California,Los Angeles,2021-01
+666,3,Office Supplies,Paper,Credit Card,California,Los Angeles,2021-01
+1149,6,Furniture,Tables,Credit Card,New York,New York City,2024-12
+615,4,Electronics,Laptops,UPI,Florida,Orlando,2022-08
+2669,19,Electronics,Electronic Games,Debit Card,Ohio,Cleveland,2022-03
+2669,19,Electronics,Electronic Games,Debit Card,New York,Buffalo,2023-07
+2669,19,Electronics,Electronic Games,Debit Card,Florida,Orlando,2022-09
+3930,14,Furniture,Tables,Debit Card,Ohio,Cleveland,2022-03
+3930,14,Furniture,Tables,Debit Card,New York,Buffalo,2023-07
+3930,14,Furniture,Tables,Debit Card,Florida,Orlando,2022-09
+958,10,Furniture,Tables,COD,Texas,Houston,2022-12
+958,10,Furniture,Tables,COD,Texas,Houston,2022-01
+958,10,Furniture,Tables,COD,Texas,Dallas,2023-01
+479,1,Office Supplies,Paper,COD,New York,Buffalo,2022-01
+906,7,Electronics,Phones,COD,New York,Buffalo,2022-01
+3429,12,Electronics,Electronic Games,UPI,Texas,Dallas,2024-03
+3429,12,Electronics,Electronic Games,UPI,Florida,Miami,2025-02
+301,20,Furniture,Bookcases,UPI,New York,Buffalo,2024-07
+342,2,Furniture,Chairs,Debit Card,Ohio,Cincinnati,2023-04
+342,2,Furniture,Chairs,Debit Card,New York,Buffalo,2020-12
+342,2,Furniture,Chairs,Debit Card,Ohio,Cincinnati,2024-05
+342,2,Furniture,Chairs,Debit Card,New York,New York City,2022-01
+242,17,Electronics,Electronic Games,EMI,Ohio,Columbus,2023-09
+155,13,Office Supplies,Markers,Credit Card,Ohio,Columbus,2023-09
+1470,1,Electronics,Phones,COD,New York,Buffalo,2021-05
+1470,1,Electronics,Phones,COD,Florida,Tampa,2023-09
+718,12,Electronics,Printers,UPI,New York,Buffalo,2021-05
+718,12,Electronics,Printers,UPI,Florida,Tampa,2023-09
+855,10,Office Supplies,Markers,EMI,New York,Buffalo,2021-05
+855,10,Office Supplies,Markers,EMI,Florida,Tampa,2023-09
+1563,2,Office Supplies,Markers,EMI,Illinois,Peoria,2024-09
+322,11,Electronics,Printers,UPI,New York,New York City,2022-06
+2702,18,Office Supplies,Paper,COD,New York,New York City,2022-06
+699,18,Office Supplies,Markers,Debit Card,California,San Francisco,2020-05
+1087,2,Office Supplies,Markers,EMI,Texas,Dallas,2024-10
+1765,7,Electronics,Printers,EMI,Texas,Dallas,2024-10
+1152,8,Office Supplies,Markers,Credit Card,Ohio,Cleveland,2022-03
+858,17,Office Supplies,Pens,Debit Card,Ohio,Columbus,2024-03
+2529,15,Furniture,Sofas,Credit Card,Ohio,Columbus,2024-03
+1437,9,Electronics,Phones,UPI,Florida,Orlando,2020-04
+589,7,Furniture,Sofas,Credit Card,Florida,Orlando,2020-04
+4045,19,Furniture,Bookcases,UPI,California,San Francisco,2024-03
+482,17,Electronics,Electronic Games,COD,California,San Francisco,2024-03
+257,19,Electronics,Laptops,COD,Ohio,Cincinnati,2023-03
+3003,13,Furniture,Sofas,Credit Card,Ohio,Cincinnati,2023-03
+3128,15,Electronics,Electronic Games,COD,Ohio,Cincinnati,2023-03
+568,5,Office Supplies,Markers,Credit Card,Ohio,Cleveland,2024-03
+568,5,Office Supplies,Markers,Credit Card,New York,Rochester,2021-04
+2020,9,Office Supplies,Pens,Debit Card,Ohio,Cleveland,2024-03
+2020,9,Office Supplies,Pens,Debit Card,New York,Rochester,2021-04
+619,16,Furniture,Sofas,Debit Card,Ohio,Columbus,2021-09
+619,16,Furniture,Sofas,Debit Card,Texas,Houston,2023-01
+986,15,Electronics,Printers,UPI,Ohio,Columbus,2021-09
+986,15,Electronics,Printers,UPI,Texas,Houston,2023-01
+373,14,Office Supplies,Paper,Credit Card,New York,New York City,2021-07
+373,14,Office Supplies,Paper,Credit Card,Ohio,Cleveland,2020-04
+114,7,Furniture,Bookcases,UPI,New York,New York City,2021-07
+114,7,Furniture,Bookcases,UPI,Ohio,Cleveland,2020-04
+145,13,Office Supplies,Binders,COD,Illinois,Chicago,2022-08
+1916,20,Office Supplies,Paper,EMI,Illinois,Chicago,2022-08
+575,17,Electronics,Laptops,UPI,New York,Rochester,2022-12
+575,17,Electronics,Laptops,UPI,Illinois,Springfield,2022-06
+515,16,Electronics,Electronic Games,EMI,New York,Rochester,2022-12
+515,16,Electronics,Electronic Games,EMI,Illinois,Springfield,2022-06
+254,5,Furniture,Bookcases,COD,New York,Rochester,2020-08
+159,19,Electronics,Printers,UPI,California,San Diego,2020-09
+2444,2,Office Supplies,Paper,Debit Card,Illinois,Peoria,2020-12
+2444,2,Office Supplies,Paper,Debit Card,Florida,Orlando,2020-11
+463,5,Office Supplies,Pens,UPI,Texas,Austin,2023-09
+803,20,Electronics,Laptops,Credit Card,Texas,Austin,2023-09
+2159,19,Furniture,Tables,UPI,Texas,Austin,2023-09
+2382,6,Office Supplies,Pens,UPI,Illinois,Chicago,2020-03
+2382,6,Office Supplies,Pens,UPI,New York,Buffalo,2020-10
+904,6,Electronics,Phones,EMI,Illinois,Chicago,2020-03
+904,6,Electronics,Phones,EMI,New York,Buffalo,2020-10
+391,9,Office Supplies,Pens,Credit Card,New York,New York City,2023-08
+265,19,Office Supplies,Pens,Credit Card,Ohio,Cincinnati,2022-04
+2029,12,Electronics,Electronic Games,Credit Card,Ohio,Cincinnati,2022-04
+551,3,Furniture,Bookcases,EMI,Ohio,Cincinnati,2022-04
+340,3,Electronics,Electronic Games,Debit Card,Texas,Austin,2021-12
+253,15,Electronics,Laptops,COD,Texas,Austin,2021-12
+196,1,Furniture,Sofas,COD,California,Los Angeles,2020-08
+571,9,Office Supplies,Pens,Debit Card,Illinois,Chicago,2025-02
+727,7,Furniture,Tables,COD,Texas,Dallas,2022-02
+406,9,Furniture,Bookcases,UPI,Texas,Dallas,2022-02
+3289,16,Electronics,Laptops,Credit Card,Florida,Miami,2024-02
+3289,16,Electronics,Laptops,Credit Card,Florida,Miami,2021-06
+3698,20,Office Supplies,Paper,EMI,Florida,Miami,2024-02
+3698,20,Office Supplies,Paper,EMI,Florida,Miami,2021-06
+1423,18,Furniture,Sofas,COD,Texas,Houston,2022-12
+1423,18,Furniture,Sofas,COD,Texas,Dallas,2023-12
+559,14,Furniture,Chairs,COD,Ohio,Cleveland,2022-07
+937,4,Furniture,Sofas,UPI,Florida,Orlando,2024-05
+821,4,Office Supplies,Paper,EMI,Illinois,Chicago,2021-10
+490,16,Furniture,Sofas,UPI,New York,Buffalo,2021-11
+179,1,Furniture,Tables,Debit Card,New York,Buffalo,2021-11
+58,7,Office Supplies,Binders,Debit Card,New York,Buffalo,2021-11
+258,17,Office Supplies,Pens,EMI,California,San Diego,2020-09
+318,17,Office Supplies,Binders,UPI,California,San Diego,2020-09
+961,11,Furniture,Sofas,Debit Card,California,San Diego,2020-09
+214,20,Electronics,Laptops,Debit Card,Ohio,Columbus,2023-01
+214,20,Electronics,Laptops,Debit Card,New York,Rochester,2020-06
+2529,3,Office Supplies,Binders,Debit Card,Ohio,Cleveland,2024-05
+2308,15,Electronics,Laptops,EMI,Texas,Austin,2023-12
+1824,14,Electronics,Printers,Credit Card,Texas,Austin,2023-12
+432,14,Furniture,Chairs,Debit Card,Ohio,Columbus,2024-02
+218,19,Furniture,Bookcases,Credit Card,California,San Diego,2024-06
+495,18,Office Supplies,Pens,UPI,California,San Diego,2024-06
+3898,20,Electronics,Electronic Games,EMI,California,San Diego,2024-06
+1576,4,Electronics,Laptops,Credit Card,New York,Buffalo,2024-06
+1134,4,Electronics,Electronic Games,COD,New York,Rochester,2023-10
+246,2,Furniture,Sofas,EMI,New York,Rochester,2023-10
+894,14,Electronics,Laptops,COD,Texas,Austin,2022-10
+894,14,Electronics,Laptops,COD,Ohio,Cincinnati,2023-10
+894,14,Electronics,Laptops,COD,Texas,Dallas,2021-02
+1478,3,Furniture,Sofas,Debit Card,Texas,Austin,2022-10
+1478,3,Furniture,Sofas,Debit Card,Ohio,Cincinnati,2023-10
+1478,3,Furniture,Sofas,Debit Card,Texas,Dallas,2021-02
+3121,17,Furniture,Chairs,Debit Card,Texas,Austin,2022-10
+3121,17,Furniture,Chairs,Debit Card,Ohio,Cincinnati,2023-10
+3121,17,Furniture,Chairs,Debit Card,Texas,Dallas,2021-02
+102,12,Electronics,Phones,Credit Card,Texas,Austin,2022-10
+102,12,Electronics,Phones,Credit Card,Ohio,Cincinnati,2023-10
+102,12,Electronics,Phones,Credit Card,Texas,Dallas,2021-02
+1989,20,Office Supplies,Paper,UPI,Illinois,Chicago,2020-11
+1888,19,Electronics,Printers,COD,Florida,Orlando,2022-05
+3275,11,Furniture,Tables,Credit Card,Florida,Orlando,2022-05
+809,13,Electronics,Laptops,COD,Florida,Orlando,2022-05
+2508,6,Electronics,Laptops,UPI,Florida,Orlando,2024-06
+2784,15,Furniture,Tables,EMI,Florida,Orlando,2024-06
+154,14,Furniture,Tables,COD,Florida,Orlando,2024-06
+2344,15,Furniture,Bookcases,EMI,Florida,Orlando,2024-06
+148,18,Furniture,Tables,EMI,Ohio,Cincinnati,2022-07
+286,12,Office Supplies,Pens,EMI,Ohio,Cincinnati,2022-07
+633,17,Office Supplies,Pens,EMI,Texas,Dallas,2021-07
+633,17,Office Supplies,Pens,EMI,Florida,Tampa,2021-10
+1221,9,Office Supplies,Paper,Credit Card,Illinois,Springfield,2024-04
+963,1,Office Supplies,Pens,Credit Card,Illinois,Springfield,2024-04
+804,4,Electronics,Printers,Credit Card,Illinois,Peoria,2020-07
+804,4,Electronics,Printers,Credit Card,Texas,Dallas,2020-07
+804,4,Electronics,Printers,Credit Card,Texas,Austin,2024-01
+804,4,Electronics,Printers,Credit Card,Texas,Dallas,2020-05
+804,4,Electronics,Printers,Credit Card,Ohio,Cincinnati,2021-11
+115,9,Furniture,Chairs,COD,Illinois,Springfield,2023-10
+2419,11,Electronics,Electronic Games,UPI,New York,Rochester,2021-10
+71,6,Office Supplies,Pens,EMI,New York,Rochester,2021-10
+3720,19,Electronics,Electronic Games,EMI,Texas,Dallas,2022-07
+1537,15,Furniture,Sofas,EMI,Illinois,Chicago,2024-08
+1438,6,Electronics,Electronic Games,Credit Card,Illinois,Chicago,2024-08
+1457,10,Office Supplies,Binders,COD,Illinois,Chicago,2024-08
+431,20,Office Supplies,Pens,UPI,Illinois,Chicago,2020-10
+204,12,Office Supplies,Markers,UPI,New York,Buffalo,2024-06
+204,12,Office Supplies,Markers,UPI,California,San Francisco,2024-12
+1693,10,Electronics,Printers,UPI,Illinois,Springfield,2020-09
+1151,16,Furniture,Bookcases,Debit Card,Florida,Orlando,2022-04
+898,15,Office Supplies,Pens,Credit Card,Ohio,Cleveland,2024-08
+898,15,Office Supplies,Pens,Credit Card,California,Los Angeles,2022-01
+3602,3,Office Supplies,Binders,Debit Card,Texas,Houston,2024-04
+121,8,Electronics,Laptops,COD,Illinois,Springfield,2022-04
+1881,17,Electronics,Phones,COD,Illinois,Springfield,2022-04
+1386,3,Furniture,Bookcases,EMI,Florida,Tampa,2020-08
+330,14,Electronics,Laptops,EMI,Ohio,Cleveland,2023-03
+1133,12,Furniture,Bookcases,COD,Ohio,Cleveland,2023-03
+887,9,Electronics,Phones,Debit Card,Ohio,Cleveland,2023-03
+1157,12,Furniture,Sofas,COD,Illinois,Chicago,2020-10
+1157,12,Furniture,Sofas,COD,New York,Buffalo,2020-06
+1157,12,Furniture,Sofas,COD,Ohio,Columbus,2023-08
+2498,17,Electronics,Phones,Credit Card,Florida,Miami,2022-07
+2598,20,Furniture,Bookcases,COD,Texas,Dallas,2022-08
+3218,20,Office Supplies,Pens,COD,Florida,Orlando,2020-07
+1706,16,Electronics,Electronic Games,EMI,Ohio,Cincinnati,2020-05
+2763,20,Office Supplies,Markers,UPI,Ohio,Cincinnati,2020-05
+64,6,Electronics,Phones,Credit Card,Ohio,Cincinnati,2020-05
+2631,13,Electronics,Laptops,EMI,California,San Francisco,2024-01
+2631,13,Electronics,Laptops,EMI,New York,Rochester,2020-09
+52,18,Electronics,Laptops,UPI,New York,New York City,2022-03
+324,5,Electronics,Electronic Games,UPI,California,San Francisco,2021-01
+3062,9,Office Supplies,Paper,COD,Florida,Orlando,2025-03
+1411,2,Office Supplies,Paper,Debit Card,Texas,Austin,2021-10
+1411,2,Office Supplies,Paper,Debit Card,California,Los Angeles,2023-01
+1152,6,Office Supplies,Pens,Credit Card,Texas,Austin,2021-10
+1152,6,Office Supplies,Pens,Credit Card,California,Los Angeles,2023-01
+2606,2,Furniture,Bookcases,Credit Card,Illinois,Peoria,2021-10
+1981,13,Furniture,Chairs,Credit Card,Ohio,Cleveland,2023-05
+1981,13,Furniture,Chairs,Credit Card,Illinois,Springfield,2024-08
+829,1,Office Supplies,Binders,COD,California,San Diego,2022-08
+2235,4,Furniture,Tables,COD,California,San Diego,2022-08
+186,20,Electronics,Phones,Debit Card,New York,Buffalo,2022-06
+189,20,Furniture,Bookcases,Debit Card,New York,Buffalo,2022-06
+3483,10,Electronics,Electronic Games,EMI,Illinois,Peoria,2025-01
+2584,7,Office Supplies,Paper,COD,Illinois,Peoria,2025-01
+3427,12,Office Supplies,Binders,Credit Card,New York,Buffalo,2022-01
+109,9,Electronics,Electronic Games,UPI,New York,Buffalo,2022-01
+1626,14,Office Supplies,Paper,COD,New York,Buffalo,2022-01
+1753,19,Electronics,Phones,Debit Card,Ohio,Cincinnati,2023-06
+258,13,Electronics,Laptops,Debit Card,Illinois,Peoria,2023-10
+258,13,Electronics,Laptops,Debit Card,New York,Buffalo,2022-06
+3055,17,Electronics,Laptops,Credit Card,Illinois,Peoria,2023-10
+3055,17,Electronics,Laptops,Credit Card,New York,Buffalo,2022-06
+2021,15,Furniture,Bookcases,EMI,Illinois,Peoria,2023-10
+2021,15,Furniture,Bookcases,EMI,New York,Buffalo,2022-06
+1559,18,Electronics,Phones,Credit Card,California,San Francisco,2024-06
+1045,12,Office Supplies,Pens,Credit Card,California,San Francisco,2024-06
+714,4,Furniture,Tables,Credit Card,California,San Francisco,2024-06
+2469,14,Office Supplies,Binders,EMI,California,San Francisco,2024-06
+4111,1,Office Supplies,Paper,UPI,California,San Francisco,2022-06
+1065,20,Office Supplies,Binders,COD,California,San Francisco,2022-06
+1142,13,Electronics,Phones,UPI,California,San Francisco,2021-02
+3146,6,Electronics,Phones,Credit Card,California,San Francisco,2021-02
+133,17,Office Supplies,Paper,Debit Card,California,San Francisco,2021-02
+235,15,Office Supplies,Binders,Debit Card,New York,Rochester,2023-05
+235,15,Office Supplies,Binders,Debit Card,Florida,Miami,2021-06
+584,13,Office Supplies,Pens,EMI,Ohio,Columbus,2024-01
+584,13,Office Supplies,Pens,EMI,California,San Francisco,2022-12
+154,14,Office Supplies,Markers,EMI,Ohio,Columbus,2024-01
+154,14,Office Supplies,Markers,EMI,California,San Francisco,2022-12
+109,15,Office Supplies,Paper,Debit Card,Ohio,Columbus,2024-01
+109,15,Office Supplies,Paper,Debit Card,California,San Francisco,2022-12
+85,16,Electronics,Phones,UPI,Ohio,Cincinnati,2024-03
+2008,2,Furniture,Chairs,COD,Florida,Miami,2020-04
+60,19,Electronics,Printers,UPI,Florida,Miami,2020-04
+4446,7,Electronics,Printers,EMI,Florida,Miami,2020-04
+175,11,Electronics,Laptops,COD,Illinois,Chicago,2023-01
+175,11,Electronics,Laptops,COD,Texas,Houston,2022-04
+175,11,Electronics,Laptops,COD,Florida,Miami,2023-12
+1776,15,Electronics,Electronic Games,UPI,Illinois,Chicago,2023-01
+1776,15,Electronics,Electronic Games,UPI,Texas,Houston,2022-04
+1776,15,Electronics,Electronic Games,UPI,Florida,Miami,2023-12
+1591,18,Electronics,Printers,EMI,Texas,Dallas,2023-05
+1591,18,Electronics,Printers,EMI,Texas,Houston,2020-11
+3699,17,Electronics,Electronic Games,UPI,Florida,Orlando,2021-03
+51,3,Office Supplies,Pens,EMI,Florida,Orlando,2021-03
+2555,20,Office Supplies,Markers,Credit Card,California,San Diego,2020-08
+2555,20,Office Supplies,Markers,Credit Card,Ohio,Cleveland,2022-10
+142,12,Office Supplies,Pens,Debit Card,Florida,Tampa,2023-09
+142,12,Office Supplies,Pens,Debit Card,Texas,Dallas,2024-12
+2628,11,Furniture,Bookcases,EMI,Florida,Tampa,2023-09
+2628,11,Furniture,Bookcases,EMI,Texas,Dallas,2024-12
+437,18,Office Supplies,Markers,COD,New York,Rochester,2021-12
+681,20,Electronics,Electronic Games,UPI,New York,Rochester,2021-12
+1041,20,Electronics,Phones,Credit Card,Texas,Austin,2021-09
+184,13,Office Supplies,Pens,COD,Illinois,Springfield,2021-09
+224,18,Office Supplies,Pens,COD,California,San Diego,2021-12
+1450,7,Furniture,Tables,EMI,California,San Diego,2021-12
+2834,12,Furniture,Chairs,UPI,California,San Diego,2021-12
+975,7,Furniture,Tables,Debit Card,Texas,Houston,2022-05
+250,3,Office Supplies,Pens,Credit Card,New York,Buffalo,2020-10
+340,10,Electronics,Laptops,Debit Card,New York,Buffalo,2020-10
+2333,14,Furniture,Bookcases,EMI,California,San Diego,2022-08
+2333,14,Furniture,Bookcases,EMI,California,San Francisco,2024-11
+738,11,Office Supplies,Markers,EMI,California,San Diego,2022-08
+738,11,Office Supplies,Markers,EMI,California,San Francisco,2024-11
+970,4,Office Supplies,Paper,Credit Card,California,San Diego,2020-09
+970,4,Office Supplies,Paper,Credit Card,Florida,Orlando,2025-02
+970,4,Office Supplies,Paper,Credit Card,California,San Francisco,2022-03
+1026,1,Electronics,Laptops,Debit Card,California,San Diego,2020-09
+1026,1,Electronics,Laptops,Debit Card,Florida,Orlando,2025-02
+1026,1,Electronics,Laptops,Debit Card,California,San Francisco,2022-03
+167,18,Electronics,Laptops,Debit Card,Illinois,Springfield,2025-03
+3750,9,Office Supplies,Binders,UPI,Illinois,Springfield,2025-03
+72,6,Furniture,Bookcases,COD,Illinois,Springfield,2025-03
+3463,5,Office Supplies,Paper,Credit Card,Florida,Tampa,2024-06
+3463,5,Office Supplies,Paper,Credit Card,Illinois,Peoria,2020-11
+3463,5,Office Supplies,Paper,Credit Card,Florida,Miami,2024-10
+3463,5,Office Supplies,Paper,Credit Card,Texas,Houston,2024-07
+1605,20,Electronics,Electronic Games,UPI,Florida,Tampa,2024-06
+1605,20,Electronics,Electronic Games,UPI,Illinois,Peoria,2020-11
+1605,20,Electronics,Electronic Games,UPI,Florida,Miami,2024-10
+1605,20,Electronics,Electronic Games,UPI,Texas,Houston,2024-07
+2459,13,Office Supplies,Pens,COD,New York,Buffalo,2020-11
+2656,11,Electronics,Printers,Credit Card,Florida,Orlando,2023-03
+2656,11,Electronics,Printers,Credit Card,Florida,Tampa,2022-10
+1335,15,Electronics,Electronic Games,Debit Card,Texas,Austin,2023-08
+1335,15,Electronics,Electronic Games,Debit Card,Texas,Austin,2021-06
+320,15,Electronics,Printers,Debit Card,Texas,Austin,2022-12
+371,12,Office Supplies,Markers,EMI,Texas,Austin,2022-12
+319,18,Furniture,Chairs,COD,Illinois,Peoria,2024-02
+983,20,Electronics,Electronic Games,Debit Card,Florida,Miami,2022-12
+1544,19,Office Supplies,Pens,COD,Florida,Miami,2022-12
+1346,15,Office Supplies,Binders,Debit Card,Texas,Houston,2021-04
+1403,13,Office Supplies,Paper,UPI,Illinois,Peoria,2021-02
+1403,13,Office Supplies,Paper,UPI,New York,Rochester,2022-12
+1403,13,Office Supplies,Paper,UPI,California,San Diego,2024-01
+388,14,Furniture,Chairs,Debit Card,Illinois,Peoria,2021-02
+388,14,Furniture,Chairs,Debit Card,New York,Rochester,2022-12
+388,14,Furniture,Chairs,Debit Card,California,San Diego,2024-01
+1043,10,Furniture,Sofas,Credit Card,Ohio,Columbus,2022-12
+4132,7,Electronics,Electronic Games,UPI,Ohio,Columbus,2022-12
+683,13,Electronics,Laptops,Credit Card,Ohio,Columbus,2022-12
+2389,2,Electronics,Phones,UPI,Florida,Miami,2022-10
+104,6,Furniture,Chairs,COD,New York,Buffalo,2020-04
+104,6,Furniture,Chairs,COD,Texas,Houston,2024-05
+116,1,Furniture,Chairs,UPI,New York,Buffalo,2020-04
+116,1,Furniture,Chairs,UPI,Texas,Houston,2024-05
+1414,4,Furniture,Chairs,COD,California,Los Angeles,2020-10
+440,18,Electronics,Printers,UPI,California,Los Angeles,2020-10
+138,16,Electronics,Phones,Debit Card,California,Los Angeles,2020-10
+1226,1,Electronics,Electronic Games,Debit Card,Ohio,Cincinnati,2021-06
+1226,1,Electronics,Electronic Games,Debit Card,New York,Rochester,2021-09
+1171,3,Office Supplies,Markers,COD,Illinois,Peoria,2022-11
+1171,3,Office Supplies,Markers,COD,New York,Rochester,2022-10
+1171,3,Office Supplies,Markers,COD,Florida,Tampa,2023-11
+1171,3,Office Supplies,Markers,COD,Texas,Houston,2023-11
+828,1,Electronics,Printers,UPI,California,Los Angeles,2023-06
+828,1,Electronics,Printers,UPI,Illinois,Chicago,2023-09
+1002,4,Electronics,Phones,Debit Card,California,Los Angeles,2023-06
+1002,4,Electronics,Phones,Debit Card,Illinois,Chicago,2023-09
+4208,13,Furniture,Chairs,Debit Card,New York,New York City,2020-09
+240,15,Furniture,Sofas,Credit Card,New York,New York City,2020-09
+2045,14,Electronics,Phones,UPI,Illinois,Springfield,2020-11
+2045,14,Electronics,Phones,UPI,California,Los Angeles,2022-08
+2045,14,Electronics,Phones,UPI,Illinois,Chicago,2023-08
+2045,14,Electronics,Phones,UPI,New York,Rochester,2023-10
+190,1,Office Supplies,Markers,Credit Card,Texas,Houston,2022-04
+1800,5,Office Supplies,Markers,UPI,California,San Francisco,2023-09
+1800,5,Office Supplies,Markers,UPI,New York,Buffalo,2020-04
+1800,5,Office Supplies,Markers,UPI,Ohio,Cleveland,2020-12
+1274,10,Furniture,Tables,EMI,California,San Francisco,2023-09
+1274,10,Furniture,Tables,EMI,New York,Buffalo,2020-04
+1274,10,Furniture,Tables,EMI,Ohio,Cleveland,2020-12
+2321,18,Furniture,Tables,Credit Card,California,Los Angeles,2024-07
+2321,18,Furniture,Tables,Credit Card,Florida,Miami,2024-09
+413,13,Electronics,Laptops,UPI,California,Los Angeles,2025-02
+362,7,Office Supplies,Pens,UPI,Illinois,Springfield,2022-10
+362,7,Office Supplies,Pens,UPI,California,San Francisco,2020-10
+302,20,Furniture,Sofas,UPI,Illinois,Springfield,2022-10
+302,20,Furniture,Sofas,UPI,California,San Francisco,2020-10
+677,12,Furniture,Chairs,UPI,Illinois,Springfield,2022-10
+677,12,Furniture,Chairs,UPI,California,San Francisco,2020-10
+384,1,Office Supplies,Pens,Credit Card,Texas,Austin,2022-01
+384,1,Office Supplies,Pens,Credit Card,Illinois,Chicago,2021-02
+1111,13,Electronics,Electronic Games,Debit Card,Texas,Austin,2022-01
+1111,13,Electronics,Electronic Games,Debit Card,Illinois,Chicago,2021-02
+1764,9,Office Supplies,Pens,Debit Card,Florida,Orlando,2021-11
+1764,9,Office Supplies,Pens,Debit Card,Texas,Houston,2022-08
+1270,1,Office Supplies,Pens,COD,California,San Francisco,2022-10
+153,15,Office Supplies,Pens,Credit Card,California,San Francisco,2022-10
+127,7,Furniture,Chairs,COD,California,San Francisco,2023-06
+1155,8,Furniture,Bookcases,Debit Card,California,San Francisco,2023-06
+2226,16,Office Supplies,Binders,Debit Card,California,San Francisco,2023-06
+325,2,Electronics,Printers,Debit Card,California,San Diego,2022-05
+1841,3,Electronics,Laptops,Credit Card,California,San Francisco,2023-01
+1841,3,Electronics,Laptops,Credit Card,California,San Diego,2021-07
+482,4,Electronics,Phones,COD,Ohio,Columbus,2025-03
+3257,17,Furniture,Bookcases,COD,Ohio,Cincinnati,2022-12
+277,6,Office Supplies,Paper,COD,Ohio,Cincinnati,2022-12
+1530,2,Office Supplies,Binders,Credit Card,Ohio,Cincinnati,2022-12
+218,2,Furniture,Tables,EMI,Texas,Dallas,2024-04
+218,2,Furniture,Tables,EMI,Florida,Tampa,2021-12
+218,2,Furniture,Tables,EMI,Illinois,Springfield,2023-09
+1453,6,Furniture,Sofas,COD,Florida,Tampa,2021-08
+1477,3,Office Supplies,Pens,EMI,Texas,Austin,2024-05
+1477,3,Office Supplies,Pens,EMI,Illinois,Springfield,2022-02
+813,5,Office Supplies,Binders,Credit Card,New York,New York City,2024-12
+1377,2,Electronics,Printers,EMI,Illinois,Chicago,2023-06
+3253,12,Office Supplies,Pens,Debit Card,New York,Buffalo,2023-11
+1481,15,Electronics,Phones,Credit Card,California,San Diego,2020-06
+176,16,Office Supplies,Markers,EMI,Texas,Dallas,2020-10
+1001,19,Office Supplies,Binders,UPI,Illinois,Springfield,2022-06
+1001,19,Office Supplies,Binders,UPI,Illinois,Chicago,2021-11
+1920,10,Furniture,Bookcases,Credit Card,Illinois,Springfield,2022-06
+1920,10,Furniture,Bookcases,Credit Card,Illinois,Chicago,2021-11
+3565,15,Electronics,Electronic Games,EMI,Florida,Miami,2021-11
+3038,10,Furniture,Tables,COD,Florida,Miami,2021-11
+1941,19,Electronics,Printers,EMI,Texas,Dallas,2021-07
+2572,17,Office Supplies,Pens,Credit Card,Texas,Dallas,2021-07
+655,1,Furniture,Chairs,EMI,California,San Diego,2024-04
+318,20,Office Supplies,Markers,Debit Card,Illinois,Springfield,2022-04
+2405,17,Furniture,Tables,EMI,New York,Buffalo,2024-03
+448,17,Furniture,Sofas,UPI,New York,New York City,2021-05
+562,5,Office Supplies,Paper,Debit Card,New York,New York City,2021-05
+106,15,Office Supplies,Pens,EMI,Ohio,Cincinnati,2022-05
+802,4,Office Supplies,Markers,Credit Card,Florida,Miami,2021-08
+802,4,Office Supplies,Markers,Credit Card,Florida,Tampa,2025-02
+2117,2,Office Supplies,Pens,UPI,California,Los Angeles,2024-04
+73,17,Furniture,Chairs,UPI,Ohio,Cleveland,2023-02
+73,17,Furniture,Chairs,UPI,California,San Diego,2024-06
+1168,19,Furniture,Bookcases,COD,Ohio,Cleveland,2023-02
+1168,19,Furniture,Bookcases,COD,California,San Diego,2024-06
+2733,17,Electronics,Electronic Games,Credit Card,Florida,Tampa,2025-01
+1450,18,Office Supplies,Markers,COD,Texas,Dallas,2023-04
+2839,7,Electronics,Printers,Credit Card,Illinois,Springfield,2022-01
+2839,7,Electronics,Printers,Credit Card,Florida,Orlando,2022-05
+2456,8,Furniture,Chairs,Credit Card,California,Los Angeles,2024-05
+2456,8,Furniture,Chairs,Credit Card,Florida,Tampa,2022-01
+1353,1,Furniture,Sofas,Credit Card,California,Los Angeles,2024-05
+1353,1,Furniture,Sofas,Credit Card,Ohio,Columbus,2021-12
+2851,5,Office Supplies,Markers,UPI,Illinois,Springfield,2022-12
+508,19,Electronics,Electronic Games,Debit Card,Texas,Dallas,2023-08
+508,19,Electronics,Electronic Games,Debit Card,Ohio,Cincinnati,2021-11
+586,9,Furniture,Tables,EMI,Texas,Dallas,2023-08
+586,9,Furniture,Tables,EMI,Ohio,Cincinnati,2021-11
+2220,18,Office Supplies,Binders,Credit Card,Florida,Miami,2021-06
+865,19,Furniture,Tables,EMI,Texas,Houston,2022-07
+875,7,Furniture,Tables,EMI,Texas,Houston,2022-07
+2385,11,Furniture,Sofas,COD,California,Los Angeles,2021-06
+417,18,Furniture,Chairs,Credit Card,California,Los Angeles,2021-06
+905,11,Electronics,Phones,COD,California,San Diego,2023-12
+2196,5,Furniture,Tables,UPI,California,San Diego,2023-12
+2204,5,Furniture,Sofas,COD,New York,New York City,2022-08
+1285,1,Furniture,Sofas,UPI,Florida,Orlando,2020-04
+2231,12,Furniture,Tables,UPI,Florida,Orlando,2020-04
+2264,6,Office Supplies,Binders,EMI,New York,Buffalo,2023-10
+3040,9,Furniture,Chairs,EMI,New York,Buffalo,2022-02
+3040,9,Furniture,Chairs,EMI,New York,Rochester,2023-10
+1491,17,Electronics,Electronic Games,UPI,New York,Buffalo,2022-02
+1491,17,Electronics,Electronic Games,UPI,New York,Rochester,2023-10
+584,13,Office Supplies,Pens,Credit Card,Illinois,Peoria,2022-09
+584,13,Office Supplies,Pens,Credit Card,Texas,Austin,2021-04
+2358,20,Furniture,Sofas,Credit Card,California,Los Angeles,2021-05
+2358,20,Furniture,Sofas,Credit Card,Florida,Miami,2024-02
+2358,20,Furniture,Sofas,Credit Card,Ohio,Cleveland,2025-02
+402,14,Office Supplies,Paper,UPI,California,San Diego,2022-10
+674,13,Electronics,Electronic Games,Debit Card,California,San Diego,2022-10
+936,10,Electronics,Electronic Games,Credit Card,Texas,Austin,2022-02
+936,10,Electronics,Electronic Games,Credit Card,Florida,Tampa,2020-11
+936,10,Electronics,Electronic Games,Credit Card,Florida,Tampa,2023-05
+505,6,Furniture,Chairs,EMI,Illinois,Springfield,2022-10
+482,6,Electronics,Laptops,COD,Florida,Tampa,2024-08
+867,12,Furniture,Sofas,COD,Illinois,Chicago,2021-11
+867,12,Furniture,Sofas,COD,Texas,Austin,2020-05
+766,7,Office Supplies,Binders,UPI,New York,New York City,2023-02
+3944,19,Office Supplies,Paper,EMI,New York,New York City,2023-02
+271,11,Office Supplies,Markers,EMI,Ohio,Columbus,2021-01
+271,11,Office Supplies,Markers,EMI,Illinois,Peoria,2022-02
+699,2,Furniture,Tables,UPI,Ohio,Columbus,2021-01
+699,2,Furniture,Tables,UPI,Illinois,Peoria,2022-02
+1836,6,Electronics,Phones,Debit Card,Texas,Dallas,2024-04
+1836,6,Electronics,Phones,Debit Card,Texas,Houston,2023-03
+1836,6,Electronics,Phones,Debit Card,New York,New York City,2023-07
+2596,15,Office Supplies,Markers,Credit Card,Texas,Dallas,2024-04
+2596,15,Office Supplies,Markers,Credit Card,Texas,Houston,2023-03
+2596,15,Office Supplies,Markers,Credit Card,New York,New York City,2023-07
+1094,18,Electronics,Printers,COD,Florida,Tampa,2024-07
+1153,1,Office Supplies,Markers,COD,Florida,Tampa,2024-07
+1084,8,Electronics,Printers,UPI,Florida,Orlando,2023-07
+788,4,Office Supplies,Paper,UPI,Florida,Orlando,2023-07
+958,7,Electronics,Printers,Debit Card,Florida,Orlando,2023-07
+345,5,Furniture,Sofas,UPI,New York,New York City,2024-10
+1638,8,Electronics,Laptops,Credit Card,New York,New York City,2024-10
+730,4,Furniture,Tables,Credit Card,Texas,Dallas,2024-02
+418,4,Electronics,Laptops,Credit Card,Texas,Dallas,2024-02
+1801,4,Electronics,Electronic Games,COD,Florida,Orlando,2023-04
+1801,4,Electronics,Electronic Games,COD,Texas,Austin,2023-10
+379,18,Electronics,Phones,UPI,Ohio,Cleveland,2022-03
+379,18,Electronics,Phones,UPI,Florida,Tampa,2022-12
+4602,14,Furniture,Chairs,UPI,Ohio,Cleveland,2022-03
+4602,14,Furniture,Chairs,UPI,Florida,Tampa,2022-12
+50,14,Electronics,Electronic Games,Credit Card,Ohio,Cleveland,2022-03
+50,14,Electronics,Electronic Games,Credit Card,Florida,Tampa,2022-12
+2135,8,Office Supplies,Markers,Debit Card,Ohio,Cleveland,2022-03
+2135,8,Office Supplies,Markers,Debit Card,Florida,Tampa,2022-12
+1665,7,Office Supplies,Markers,COD,New York,Rochester,2024-07
+1665,7,Office Supplies,Markers,COD,New York,Buffalo,2022-07
+957,18,Furniture,Bookcases,COD,Texas,Austin,2024-07
+1192,18,Furniture,Tables,Credit Card,California,San Diego,2024-02
+1192,18,Furniture,Tables,Credit Card,California,Los Angeles,2025-01
+686,11,Furniture,Chairs,Credit Card,New York,New York City,2021-12
+552,14,Furniture,Chairs,EMI,New York,Buffalo,2021-12
+552,14,Furniture,Chairs,EMI,California,San Francisco,2020-11
+1003,19,Office Supplies,Paper,Credit Card,New York,Buffalo,2021-12
+1003,19,Office Supplies,Paper,Credit Card,California,San Francisco,2020-11
+911,19,Furniture,Bookcases,EMI,New York,Buffalo,2021-12
+1408,14,Office Supplies,Pens,EMI,New York,Buffalo,2021-12
+2471,6,Office Supplies,Paper,UPI,New York,Buffalo,2024-07
+1728,10,Furniture,Tables,UPI,Illinois,Peoria,2021-02
+201,13,Furniture,Bookcases,COD,Ohio,Columbus,2020-10
+201,13,Furniture,Bookcases,COD,Texas,Dallas,2023-04
+231,18,Furniture,Bookcases,EMI,Florida,Tampa,2020-10
+2071,18,Furniture,Bookcases,Debit Card,New York,Rochester,2023-12
+4090,8,Electronics,Electronic Games,COD,New York,Rochester,2023-12
+3968,18,Office Supplies,Markers,Debit Card,New York,Rochester,2022-12
+3968,18,Office Supplies,Markers,Debit Card,Illinois,Peoria,2022-08
+251,14,Furniture,Sofas,EMI,New York,Rochester,2022-12
+251,14,Furniture,Sofas,EMI,Illinois,Peoria,2022-08
+1415,10,Office Supplies,Binders,UPI,California,Los Angeles,2023-10
+1415,10,Office Supplies,Binders,UPI,Florida,Orlando,2022-02
+482,13,Electronics,Electronic Games,COD,Texas,Austin,2024-05
+638,12,Furniture,Bookcases,Debit Card,New York,New York City,2020-10
+1289,12,Furniture,Chairs,Debit Card,New York,New York City,2020-10
+961,15,Furniture,Sofas,UPI,Ohio,Columbus,2024-02
+961,15,Furniture,Sofas,UPI,California,San Francisco,2021-02
+1940,9,Office Supplies,Paper,COD,Florida,Tampa,2022-03
+602,9,Electronics,Laptops,Credit Card,Ohio,Cincinnati,2020-05
+602,9,Electronics,Laptops,Credit Card,Texas,Dallas,2025-02
+602,9,Electronics,Laptops,Credit Card,Ohio,Cincinnati,2021-11
+602,9,Electronics,Laptops,Credit Card,New York,Rochester,2024-09
+1849,19,Furniture,Chairs,EMI,Ohio,Cincinnati,2020-05
+1849,19,Furniture,Chairs,EMI,Texas,Dallas,2025-02
+1849,19,Furniture,Chairs,EMI,Ohio,Cincinnati,2021-11
+1849,19,Furniture,Chairs,EMI,New York,Rochester,2024-09
+3099,14,Office Supplies,Pens,Credit Card,Illinois,Chicago,2022-06
+696,14,Electronics,Electronic Games,Credit Card,Illinois,Chicago,2022-06
+3132,17,Furniture,Chairs,COD,Illinois,Chicago,2022-06
+673,12,Electronics,Printers,Debit Card,Texas,Austin,2022-11
+444,18,Electronics,Electronic Games,Credit Card,Florida,Tampa,2023-11
+1724,3,Electronics,Electronic Games,Debit Card,Florida,Orlando,2020-04
+319,4,Office Supplies,Pens,UPI,Florida,Miami,2022-01
+3882,14,Furniture,Chairs,UPI,Florida,Miami,2022-01
+279,7,Furniture,Chairs,Debit Card,Florida,Miami,2022-01
+2049,4,Office Supplies,Markers,UPI,Florida,Miami,2022-01
+158,16,Furniture,Tables,Credit Card,Ohio,Cleveland,2022-03
+158,16,Furniture,Tables,Credit Card,Florida,Miami,2020-06
+158,16,Furniture,Tables,Credit Card,New York,Buffalo,2022-12
+158,16,Furniture,Tables,Credit Card,New York,New York City,2024-11
+158,16,Furniture,Tables,Credit Card,Florida,Orlando,2020-11
+158,16,Furniture,Tables,Credit Card,New York,Rochester,2023-10
+177,17,Furniture,Sofas,UPI,Ohio,Cleveland,2022-03
+177,17,Furniture,Sofas,UPI,Florida,Miami,2020-06
+177,17,Furniture,Sofas,UPI,New York,Buffalo,2022-12
+177,17,Furniture,Sofas,UPI,New York,New York City,2024-11
+177,17,Furniture,Sofas,UPI,Florida,Orlando,2020-11
+177,17,Furniture,Sofas,UPI,New York,Rochester,2023-10
+1085,3,Electronics,Printers,Debit Card,Illinois,Chicago,2023-07
+1085,3,Electronics,Printers,Debit Card,New York,Rochester,2022-05
+576,19,Furniture,Tables,COD,Illinois,Chicago,2023-07
+576,19,Furniture,Tables,COD,New York,Rochester,2022-05
+64,19,Furniture,Sofas,COD,California,San Francisco,2024-06
+64,19,Furniture,Sofas,COD,Ohio,Cleveland,2021-10
+1680,5,Electronics,Printers,EMI,Texas,Houston,2022-10
+95,8,Office Supplies,Pens,UPI,New York,Rochester,2023-07
+2976,2,Electronics,Laptops,EMI,New York,New York City,2025-02
+1663,3,Furniture,Bookcases,COD,New York,New York City,2025-02
+2642,8,Furniture,Chairs,UPI,Ohio,Cincinnati,2021-03
+509,8,Electronics,Phones,Credit Card,New York,Buffalo,2021-01
+1439,9,Office Supplies,Paper,Debit Card,Ohio,Cincinnati,2023-05
+1896,5,Office Supplies,Paper,EMI,California,Los Angeles,2023-10
+2378,18,Electronics,Phones,COD,New York,New York City,2022-08
+2510,17,Electronics,Printers,COD,Ohio,Columbus,2022-04
+1660,16,Office Supplies,Markers,EMI,California,San Diego,2023-04
+555,20,Electronics,Laptops,Debit Card,Illinois,Chicago,2024-10
+1018,14,Office Supplies,Binders,UPI,Illinois,Chicago,2024-10
+936,15,Office Supplies,Markers,EMI,Illinois,Springfield,2021-07
+936,15,Office Supplies,Markers,EMI,California,Los Angeles,2022-04
+151,10,Office Supplies,Binders,EMI,Texas,Austin,2022-04
+3178,16,Office Supplies,Markers,Debit Card,Illinois,Chicago,2023-01
+917,16,Office Supplies,Pens,Debit Card,Illinois,Chicago,2024-11
+2607,6,Office Supplies,Paper,Debit Card,Texas,Dallas,2022-04
+2607,6,Office Supplies,Paper,Debit Card,New York,Rochester,2025-02
+2121,19,Electronics,Laptops,EMI,Ohio,Cleveland,2021-05
+2121,19,Electronics,Laptops,EMI,California,San Diego,2022-01
+1928,7,Furniture,Tables,Credit Card,New York,New York City,2025-01
+1008,8,Electronics,Printers,COD,Florida,Miami,2021-02
+249,5,Office Supplies,Binders,Credit Card,Ohio,Columbus,2024-08
+249,5,Office Supplies,Binders,Credit Card,Texas,Dallas,2022-12
+945,13,Office Supplies,Markers,EMI,Illinois,Springfield,2024-03
+945,13,Office Supplies,Markers,EMI,Illinois,Peoria,2020-12
+1704,4,Office Supplies,Binders,Debit Card,Texas,Austin,2023-03
+1430,19,Furniture,Bookcases,Credit Card,California,San Francisco,2023-06
+265,4,Electronics,Phones,Credit Card,New York,Buffalo,2022-07
+265,4,Electronics,Phones,Credit Card,New York,Rochester,2024-12
+543,10,Furniture,Bookcases,Credit Card,New York,Buffalo,2022-07
+543,10,Furniture,Bookcases,Credit Card,New York,Rochester,2024-12
+605,11,Office Supplies,Pens,EMI,California,San Francisco,2023-11
+605,11,Office Supplies,Pens,EMI,Ohio,Cleveland,2024-10
+1100,9,Electronics,Electronic Games,EMI,Texas,Austin,2022-11
+1100,9,Electronics,Electronic Games,EMI,Illinois,Peoria,2022-12
+1666,12,Furniture,Bookcases,EMI,Ohio,Cleveland,2025-02
+885,16,Office Supplies,Pens,EMI,Illinois,Peoria,2022-11
+2394,4,Furniture,Bookcases,EMI,Illinois,Peoria,2022-11
+258,15,Office Supplies,Pens,EMI,Florida,Orlando,2021-06
+3962,7,Furniture,Tables,EMI,Florida,Miami,2020-09
+3295,9,Furniture,Tables,COD,New York,Rochester,2024-04
+3666,8,Office Supplies,Pens,UPI,New York,Rochester,2024-04
+314,14,Furniture,Chairs,Debit Card,New York,Rochester,2024-04
+2673,8,Furniture,Sofas,COD,New York,New York City,2024-04
+207,17,Furniture,Tables,UPI,California,San Diego,2023-12
+2322,8,Furniture,Tables,Debit Card,Texas,Austin,2024-05
+2322,8,Furniture,Tables,Debit Card,California,San Francisco,2024-11
+187,1,Office Supplies,Binders,COD,Ohio,Cincinnati,2022-03
+187,1,Office Supplies,Binders,COD,Texas,Houston,2023-05
+921,20,Office Supplies,Paper,UPI,California,Los Angeles,2024-10
+921,20,Office Supplies,Paper,UPI,Illinois,Springfield,2020-09
+418,15,Office Supplies,Paper,UPI,California,Los Angeles,2021-08
+562,7,Office Supplies,Pens,EMI,New York,Rochester,2022-10
+562,7,Office Supplies,Pens,EMI,California,San Diego,2020-05
+562,7,Office Supplies,Pens,EMI,Florida,Tampa,2020-04
+661,10,Electronics,Phones,EMI,New York,Rochester,2022-10
+661,10,Electronics,Phones,EMI,California,San Diego,2020-05
+661,10,Electronics,Phones,EMI,Florida,Tampa,2020-04
+2609,2,Electronics,Laptops,EMI,California,San Francisco,2022-06
+3089,12,Office Supplies,Paper,COD,California,San Francisco,2022-06
+1574,17,Office Supplies,Pens,Debit Card,California,San Francisco,2022-11
+1574,17,Office Supplies,Pens,Debit Card,California,San Diego,2024-07
+1574,17,Office Supplies,Pens,Debit Card,Florida,Miami,2023-07
+3865,8,Furniture,Sofas,Debit Card,Illinois,Peoria,2020-08
+379,5,Furniture,Bookcases,UPI,California,Los Angeles,2024-06
+1159,4,Office Supplies,Pens,Debit Card,Illinois,Springfield,2020-07
+1381,11,Electronics,Phones,EMI,Texas,Houston,2024-04
+238,9,Electronics,Phones,COD,Florida,Tampa,2021-03
+1494,15,Furniture,Chairs,EMI,California,San Francisco,2023-04
+2332,2,Furniture,Chairs,COD,Illinois,Chicago,2020-11
+4930,15,Electronics,Laptops,Debit Card,New York,Rochester,2023-06
+3502,1,Electronics,Phones,Debit Card,Florida,Tampa,2021-08
+800,1,Office Supplies,Pens,EMI,New York,New York City,2020-05
+164,10,Furniture,Sofas,UPI,New York,Buffalo,2021-08
+309,3,Electronics,Phones,Credit Card,Ohio,Cleveland,2022-09
+309,3,Electronics,Phones,Credit Card,Illinois,Chicago,2020-10
+2166,19,Office Supplies,Binders,EMI,Florida,Tampa,2022-05
+318,20,Electronics,Electronic Games,UPI,Florida,Tampa,2022-05
+2770,19,Office Supplies,Markers,Debit Card,Florida,Orlando,2024-03
+2770,19,Office Supplies,Markers,Debit Card,Florida,Orlando,2023-10
+1594,19,Electronics,Printers,Debit Card,Florida,Orlando,2024-03
+1594,19,Electronics,Printers,Debit Card,Florida,Orlando,2023-10
+1751,15,Furniture,Chairs,Debit Card,California,San Francisco,2022-08
+1751,15,Furniture,Chairs,Debit Card,New York,New York City,2020-09
+557,11,Electronics,Electronic Games,COD,California,Los Angeles,2021-04
+594,11,Office Supplies,Binders,COD,Ohio,Cleveland,2021-08
+594,11,Office Supplies,Binders,COD,Ohio,Columbus,2021-05
+371,6,Office Supplies,Markers,UPI,Ohio,Cleveland,2021-08
+371,6,Office Supplies,Markers,UPI,Ohio,Columbus,2021-05
+734,1,Furniture,Sofas,EMI,Texas,Dallas,2022-01
+4299,12,Electronics,Printers,Debit Card,California,San Diego,2023-03
+4299,12,Electronics,Printers,Debit Card,New York,Buffalo,2023-12
+297,4,Office Supplies,Markers,Debit Card,New York,Buffalo,2022-02
+297,4,Office Supplies,Markers,Debit Card,Florida,Orlando,2023-11
+308,10,Electronics,Phones,Debit Card,New York,Buffalo,2023-01
+308,10,Electronics,Phones,Debit Card,Ohio,Cleveland,2023-05
+2504,13,Electronics,Printers,EMI,New York,Buffalo,2023-01
+2504,13,Electronics,Printers,EMI,Ohio,Cleveland,2023-05
+1318,5,Furniture,Tables,UPI,Florida,Miami,2024-02
+2477,1,Office Supplies,Markers,UPI,Texas,Austin,2021-12
+1794,19,Furniture,Bookcases,Debit Card,Texas,Austin,2021-12
+950,19,Office Supplies,Markers,EMI,New York,Buffalo,2024-12
+232,14,Furniture,Tables,UPI,Ohio,Columbus,2023-01
+232,14,Furniture,Tables,UPI,Texas,Austin,2020-12
+501,6,Office Supplies,Pens,COD,Texas,Austin,2021-02
+1163,10,Furniture,Bookcases,UPI,Ohio,Cleveland,2023-05
+1163,10,Furniture,Bookcases,UPI,California,Los Angeles,2020-04
+1163,10,Furniture,Bookcases,UPI,New York,Rochester,2021-08
+267,11,Electronics,Phones,Debit Card,Ohio,Cleveland,2023-05
+267,11,Electronics,Phones,Debit Card,California,Los Angeles,2020-04
+267,11,Electronics,Phones,Debit Card,New York,Rochester,2021-08
+1127,1,Office Supplies,Markers,Credit Card,Texas,Dallas,2023-07
+1743,19,Furniture,Sofas,Credit Card,Florida,Miami,2022-08
+2526,6,Office Supplies,Pens,Debit Card,Texas,Dallas,2023-03
+2871,15,Electronics,Phones,UPI,Florida,Orlando,2023-11
+2871,15,Electronics,Phones,UPI,Illinois,Chicago,2024-04
+2712,1,Furniture,Sofas,Credit Card,Florida,Orlando,2023-11
+2712,1,Furniture,Sofas,Credit Card,Illinois,Chicago,2024-04
+3586,13,Office Supplies,Markers,UPI,New York,Rochester,2022-09
+3394,6,Furniture,Chairs,COD,California,San Diego,2024-10
+2037,7,Electronics,Printers,Debit Card,California,San Francisco,2024-11
+2037,7,Electronics,Printers,Debit Card,Texas,Houston,2021-10
+471,7,Furniture,Sofas,EMI,California,Los Angeles,2023-12
+471,7,Furniture,Sofas,EMI,Illinois,Peoria,2023-06
+2458,9,Office Supplies,Pens,Credit Card,New York,New York City,2020-09
+1556,18,Furniture,Sofas,EMI,Illinois,Springfield,2025-02
+481,16,Furniture,Chairs,Debit Card,New York,Rochester,2023-07
+481,16,Furniture,Chairs,Debit Card,New York,New York City,2022-02
+3297,6,Electronics,Printers,Debit Card,Florida,Orlando,2023-09
+3297,6,Electronics,Printers,Debit Card,New York,New York City,2025-01
+4068,20,Electronics,Printers,Credit Card,Florida,Orlando,2023-09
+4068,20,Electronics,Printers,Credit Card,New York,New York City,2025-01
+1475,8,Electronics,Laptops,UPI,Florida,Orlando,2023-09
+1475,8,Electronics,Laptops,UPI,New York,New York City,2025-01
+4197,2,Office Supplies,Markers,EMI,Ohio,Cincinnati,2025-01
+4197,2,Office Supplies,Markers,EMI,Ohio,Columbus,2021-03
+2782,19,Office Supplies,Pens,COD,Ohio,Columbus,2021-12
+1345,18,Furniture,Chairs,Debit Card,Ohio,Columbus,2023-02
+1345,18,Furniture,Chairs,Debit Card,Florida,Orlando,2023-04
+1345,18,Furniture,Chairs,Debit Card,California,San Francisco,2024-11
+766,14,Furniture,Tables,EMI,Ohio,Columbus,2023-02
+766,14,Furniture,Tables,EMI,Florida,Orlando,2023-04
+766,14,Furniture,Tables,EMI,California,San Francisco,2024-11
+1691,3,Office Supplies,Paper,Debit Card,Illinois,Springfield,2024-07
+324,11,Office Supplies,Paper,EMI,Illinois,Springfield,2024-07
+480,13,Electronics,Laptops,Debit Card,Ohio,Cleveland,2022-01
+267,5,Electronics,Phones,Debit Card,Ohio,Columbus,2024-10
+1254,15,Office Supplies,Paper,EMI,Ohio,Columbus,2024-10
+211,5,Electronics,Printers,COD,California,San Diego,2020-06
+3096,14,Furniture,Chairs,Debit Card,Florida,Tampa,2023-12
+1577,6,Office Supplies,Binders,Debit Card,New York,Rochester,2020-12
+58,19,Electronics,Electronic Games,COD,Florida,Tampa,2025-03
+1726,9,Electronics,Phones,EMI,Texas,Dallas,2024-08
+1738,20,Electronics,Phones,UPI,Texas,Dallas,2024-08
+3381,19,Office Supplies,Markers,Credit Card,California,San Diego,2021-05
+2052,13,Electronics,Phones,Debit Card,Ohio,Cincinnati,2020-09
+1704,14,Office Supplies,Pens,UPI,California,Los Angeles,2025-01
+1137,16,Office Supplies,Markers,UPI,Texas,Houston,2021-10
+74,15,Electronics,Printers,EMI,Texas,Houston,2021-10
+743,10,Furniture,Bookcases,UPI,Illinois,Springfield,2021-10
+3430,4,Electronics,Electronic Games,Credit Card,Texas,Austin,2024-07
+3430,4,Electronics,Electronic Games,Credit Card,Texas,Austin,2023-07
+3306,8,Furniture,Sofas,Debit Card,Ohio,Columbus,2020-04
+285,4,Office Supplies,Pens,Credit Card,New York,New York City,2020-07
+1949,12,Electronics,Printers,UPI,New York,Rochester,2022-05
+965,4,Furniture,Sofas,Credit Card,New York,Rochester,2022-05
+661,13,Furniture,Chairs,EMI,Illinois,Springfield,2023-11
+224,4,Furniture,Tables,COD,Texas,Dallas,2021-08
+781,9,Office Supplies,Paper,EMI,New York,Buffalo,2023-07
+4477,4,Office Supplies,Paper,Credit Card,Illinois,Chicago,2020-08
+663,8,Electronics,Phones,Credit Card,Florida,Miami,2022-11
+397,17,Electronics,Printers,Credit Card,Illinois,Peoria,2024-03
+397,17,Electronics,Printers,Credit Card,New York,Buffalo,2024-09
+397,17,Electronics,Printers,Credit Card,Ohio,Columbus,2022-02
+88,11,Office Supplies,Paper,Debit Card,Illinois,Peoria,2024-03
+88,11,Office Supplies,Paper,Debit Card,New York,Buffalo,2024-09
+88,11,Office Supplies,Paper,Debit Card,Ohio,Columbus,2022-02
+2251,7,Electronics,Electronic Games,Debit Card,Florida,Miami,2022-02
+1547,3,Office Supplies,Paper,COD,Florida,Miami,2022-02
+2588,10,Electronics,Printers,COD,Florida,Miami,2022-02
+2041,8,Furniture,Tables,EMI,Illinois,Springfield,2021-05
+2041,8,Furniture,Tables,EMI,Illinois,Springfield,2023-07
+2041,8,Furniture,Tables,EMI,California,San Diego,2020-10
+1834,10,Electronics,Printers,Credit Card,Illinois,Springfield,2021-05
+1834,10,Electronics,Printers,Credit Card,Illinois,Springfield,2023-07
+1834,10,Electronics,Printers,Credit Card,California,San Diego,2020-10
+436,13,Furniture,Sofas,EMI,Texas,Austin,2023-01
+342,8,Office Supplies,Paper,EMI,California,Los Angeles,2021-09
+342,8,Office Supplies,Paper,EMI,Ohio,Cincinnati,2021-11
+342,8,Office Supplies,Paper,EMI,Texas,Houston,2024-07
+1943,16,Furniture,Tables,Credit Card,California,San Francisco,2022-03
+615,3,Electronics,Electronic Games,UPI,New York,New York City,2024-03
+615,3,Electronics,Electronic Games,UPI,Illinois,Springfield,2020-11
+1134,5,Furniture,Chairs,EMI,New York,New York City,2024-03
+1134,5,Furniture,Chairs,EMI,Illinois,Springfield,2020-11
+298,18,Office Supplies,Binders,Credit Card,Illinois,Springfield,2022-07
+220,14,Furniture,Bookcases,Credit Card,New York,Buffalo,2024-09
+914,5,Office Supplies,Markers,Debit Card,New York,Buffalo,2024-09
+612,6,Electronics,Laptops,COD,Texas,Austin,2022-01
+1253,3,Electronics,Printers,EMI,New York,New York City,2021-04
+2881,6,Office Supplies,Paper,Debit Card,Texas,Houston,2021-07
+3858,16,Furniture,Sofas,Credit Card,New York,Buffalo,2022-06
+3858,16,Furniture,Sofas,Credit Card,New York,Rochester,2024-06
+292,7,Office Supplies,Pens,Debit Card,New York,Buffalo,2022-06
+292,7,Office Supplies,Pens,Debit Card,New York,Rochester,2024-06
+662,17,Furniture,Bookcases,UPI,New York,Buffalo,2022-06
+662,17,Furniture,Bookcases,UPI,New York,Rochester,2024-06
+476,9,Office Supplies,Paper,COD,New York,New York City,2022-09
+749,8,Electronics,Laptops,Credit Card,California,San Diego,2023-05
+749,8,Electronics,Laptops,Credit Card,Texas,Houston,2020-05
+1451,15,Furniture,Sofas,EMI,Illinois,Chicago,2021-04
+4361,1,Furniture,Chairs,EMI,Illinois,Springfield,2023-11
+1553,13,Office Supplies,Paper,EMI,Florida,Tampa,2020-05
+67,19,Office Supplies,Paper,Debit Card,New York,Buffalo,2023-09
+67,19,Office Supplies,Paper,Debit Card,Florida,Miami,2024-01
+67,19,Office Supplies,Paper,Debit Card,Texas,Austin,2024-05
+2618,11,Furniture,Tables,COD,Ohio,Cincinnati,2024-03
+1051,3,Furniture,Bookcases,UPI,California,San Francisco,2020-09
+1874,8,Electronics,Laptops,EMI,California,San Francisco,2020-09
+410,5,Office Supplies,Markers,Credit Card,Illinois,Springfield,2020-07
+410,5,Office Supplies,Markers,Credit Card,New York,Buffalo,2022-12
+410,5,Office Supplies,Markers,Credit Card,Ohio,Columbus,2024-03
+410,5,Office Supplies,Markers,Credit Card,Illinois,Chicago,2023-02
+410,5,Office Supplies,Markers,Credit Card,California,Los Angeles,2021-07
+534,4,Office Supplies,Binders,UPI,Illinois,Springfield,2020-07
+534,4,Office Supplies,Binders,UPI,New York,Buffalo,2022-12
+534,4,Office Supplies,Binders,UPI,Ohio,Columbus,2024-03
+534,4,Office Supplies,Binders,UPI,Illinois,Chicago,2023-02
+534,4,Office Supplies,Binders,UPI,California,Los Angeles,2021-07
+2305,1,Office Supplies,Binders,COD,Florida,Tampa,2022-10
+139,19,Furniture,Tables,Debit Card,Ohio,Cincinnati,2020-12
+139,19,Furniture,Tables,Debit Card,Ohio,Cleveland,2022-04
+139,19,Furniture,Tables,Debit Card,Illinois,Chicago,2023-04
+800,16,Furniture,Tables,UPI,Ohio,Cincinnati,2020-12
+800,16,Furniture,Tables,UPI,Ohio,Cleveland,2022-04
+800,16,Furniture,Tables,UPI,Illinois,Chicago,2023-04
+1626,9,Office Supplies,Paper,UPI,Ohio,Cincinnati,2020-12
+1626,9,Office Supplies,Paper,UPI,Ohio,Cleveland,2022-04
+1626,9,Office Supplies,Paper,UPI,Illinois,Chicago,2023-04
+2530,5,Furniture,Sofas,Debit Card,California,San Diego,2021-10
+2530,5,Furniture,Sofas,Debit Card,Florida,Miami,2024-12
+96,3,Electronics,Electronic Games,UPI,Ohio,Cleveland,2020-08
+848,6,Office Supplies,Markers,Credit Card,Florida,Tampa,2024-03
+1536,1,Electronics,Phones,EMI,California,San Diego,2023-10
+163,6,Electronics,Phones,COD,New York,New York City,2023-07
+275,5,Furniture,Chairs,Credit Card,Florida,Miami,2021-11
+192,13,Electronics,Electronic Games,Credit Card,Florida,Miami,2021-11
+1554,15,Electronics,Laptops,Debit Card,Ohio,Columbus,2020-09
+235,5,Office Supplies,Paper,EMI,Ohio,Cleveland,2021-06
+235,5,Office Supplies,Paper,EMI,Florida,Orlando,2022-08
+235,5,Office Supplies,Paper,EMI,Illinois,Springfield,2024-04
+155,8,Furniture,Sofas,COD,Ohio,Cincinnati,2022-08
+155,8,Furniture,Sofas,COD,Ohio,Cleveland,2021-03
+212,7,Electronics,Electronic Games,Credit Card,Illinois,Peoria,2024-06
+212,7,Electronics,Electronic Games,Credit Card,Florida,Tampa,2023-12
+188,9,Furniture,Chairs,Debit Card,Florida,Tampa,2024-11
+767,13,Electronics,Printers,COD,Florida,Tampa,2022-01
+767,13,Electronics,Printers,COD,California,San Francisco,2021-11
+1005,1,Furniture,Chairs,Credit Card,Ohio,Cincinnati,2023-10
+1005,1,Furniture,Chairs,Credit Card,California,San Diego,2025-03
+558,8,Office Supplies,Pens,UPI,Ohio,Cincinnati,2023-10
+558,8,Office Supplies,Pens,UPI,California,San Diego,2025-03
+1354,16,Office Supplies,Markers,UPI,Illinois,Peoria,2024-08
+1354,16,Office Supplies,Markers,UPI,New York,Buffalo,2023-06
+1354,16,Office Supplies,Markers,UPI,Florida,Orlando,2024-10
+1354,16,Office Supplies,Markers,UPI,New York,Buffalo,2021-01
+941,2,Office Supplies,Pens,EMI,Ohio,Cleveland,2022-04
+941,2,Office Supplies,Pens,EMI,Texas,Austin,2022-08
+2230,13,Electronics,Printers,Debit Card,Illinois,Peoria,2023-08
+469,2,Office Supplies,Pens,Debit Card,Texas,Dallas,2020-04
+737,6,Office Supplies,Binders,UPI,Texas,Dallas,2020-04
+355,2,Electronics,Phones,COD,Florida,Tampa,2024-12
+1246,17,Furniture,Sofas,EMI,Florida,Orlando,2022-07
+1246,17,Furniture,Sofas,EMI,Florida,Miami,2022-05
+893,18,Electronics,Printers,Debit Card,California,San Francisco,2022-08
+893,18,Electronics,Printers,Debit Card,Ohio,Columbus,2022-08
+1447,8,Furniture,Bookcases,Credit Card,California,San Francisco,2022-08
+1447,8,Furniture,Bookcases,Credit Card,Ohio,Columbus,2022-08
+85,9,Office Supplies,Pens,EMI,Texas,Houston,2023-08
+1012,6,Electronics,Laptops,Credit Card,California,San Diego,2022-09
+2462,10,Office Supplies,Pens,UPI,California,Los Angeles,2023-08
+1686,9,Furniture,Tables,Debit Card,Ohio,Cincinnati,2020-12
+1686,9,Furniture,Tables,Debit Card,Illinois,Peoria,2023-09
+1686,9,Furniture,Tables,Debit Card,Illinois,Chicago,2022-01
+4441,16,Electronics,Printers,EMI,New York,New York City,2023-06
+3098,16,Electronics,Phones,Credit Card,Texas,Dallas,2021-04
+3098,16,Electronics,Phones,Credit Card,Illinois,Springfield,2024-05
+356,11,Electronics,Electronic Games,Credit Card,Texas,Dallas,2021-04
+356,11,Electronics,Electronic Games,Credit Card,Illinois,Springfield,2024-05
+728,3,Electronics,Phones,UPI,Florida,Miami,2023-03
+914,15,Furniture,Bookcases,Debit Card,Illinois,Peoria,2022-07
+914,15,Furniture,Bookcases,Debit Card,California,Los Angeles,2021-06
+999,3,Office Supplies,Pens,COD,Florida,Miami,2024-02
+149,20,Office Supplies,Pens,Debit Card,New York,Rochester,2021-08
+608,8,Electronics,Phones,EMI,Texas,Houston,2022-05
+3359,13,Furniture,Bookcases,Credit Card,Texas,Houston,2022-05
+1982,7,Office Supplies,Markers,EMI,Illinois,Peoria,2024-03
+4507,5,Office Supplies,Markers,UPI,Ohio,Cincinnati,2020-07
+177,13,Furniture,Bookcases,EMI,Ohio,Cleveland,2020-12
+897,14,Electronics,Electronic Games,COD,Illinois,Springfield,2022-08
+897,14,Electronics,Electronic Games,COD,Ohio,Cleveland,2025-02
+897,14,Electronics,Electronic Games,COD,Florida,Orlando,2021-06
+867,7,Furniture,Sofas,UPI,Texas,Houston,2022-12
+606,6,Electronics,Phones,Debit Card,Ohio,Columbus,2025-01
+606,6,Electronics,Phones,Debit Card,California,San Diego,2025-02
+92,11,Electronics,Printers,COD,Illinois,Springfield,2023-01
+126,6,Electronics,Laptops,COD,Ohio,Cincinnati,2020-10
+2826,9,Furniture,Bookcases,EMI,California,San Francisco,2023-05
+2826,9,Furniture,Bookcases,EMI,California,Los Angeles,2024-03
+2826,9,Furniture,Bookcases,EMI,New York,New York City,2024-03
+245,19,Electronics,Laptops,COD,Ohio,Columbus,2022-05
+2677,15,Office Supplies,Markers,UPI,Florida,Miami,2020-12
+2640,14,Electronics,Laptops,Credit Card,New York,New York City,2021-08
+2640,14,Electronics,Laptops,Credit Card,Texas,Dallas,2022-10
+3618,5,Furniture,Bookcases,Debit Card,New York,Rochester,2024-02
+3618,5,Furniture,Bookcases,Debit Card,Illinois,Peoria,2022-10
+322,15,Electronics,Electronic Games,COD,New York,New York City,2022-05
+80,20,Electronics,Electronic Games,Credit Card,New York,Rochester,2022-07
+1539,19,Furniture,Bookcases,COD,California,San Francisco,2021-12
+1539,19,Furniture,Bookcases,COD,Texas,Dallas,2021-06
+3895,4,Office Supplies,Binders,EMI,Ohio,Cleveland,2025-02
+1485,7,Electronics,Phones,UPI,Florida,Tampa,2023-02
+1180,19,Office Supplies,Paper,Credit Card,New York,New York City,2021-12
+713,2,Electronics,Electronic Games,UPI,New York,New York City,2024-06
+713,2,Electronics,Electronic Games,UPI,New York,Buffalo,2022-06
+713,2,Electronics,Electronic Games,UPI,Texas,Dallas,2020-05
+229,5,Office Supplies,Pens,EMI,Illinois,Springfield,2024-02
+229,5,Office Supplies,Pens,EMI,Ohio,Columbus,2020-11
+3063,19,Electronics,Printers,UPI,Ohio,Cincinnati,2023-08
+1686,3,Office Supplies,Markers,Credit Card,Ohio,Cincinnati,2022-05
+1390,16,Office Supplies,Paper,Credit Card,California,Los Angeles,2024-01
+1039,6,Office Supplies,Markers,COD,Florida,Orlando,2021-11
+1039,6,Office Supplies,Markers,COD,Florida,Miami,2021-10
+1039,6,Office Supplies,Markers,COD,California,San Francisco,2025-01
+355,17,Furniture,Tables,COD,New York,Buffalo,2022-05
+355,17,Furniture,Tables,COD,Texas,Austin,2023-11
+355,17,Furniture,Tables,COD,California,San Francisco,2023-01
+55,9,Furniture,Bookcases,Debit Card,Illinois,Peoria,2021-09
+3821,13,Electronics,Laptops,EMI,Illinois,Peoria,2021-09
+256,12,Electronics,Phones,COD,Illinois,Peoria,2021-02
+256,12,Electronics,Phones,COD,New York,New York City,2021-10
+1214,7,Furniture,Sofas,Credit Card,New York,Rochester,2020-06
+611,19,Furniture,Bookcases,UPI,Texas,Dallas,2024-05
+3043,1,Furniture,Sofas,COD,New York,Buffalo,2020-08
+300,3,Furniture,Bookcases,Credit Card,Illinois,Peoria,2020-10
+2999,18,Office Supplies,Markers,COD,Ohio,Cleveland,2021-05
+2999,18,Office Supplies,Markers,COD,Texas,Austin,2022-01
+3178,18,Furniture,Sofas,UPI,Ohio,Columbus,2023-07
+1969,10,Electronics,Laptops,Credit Card,Illinois,Springfield,2022-12
+700,18,Electronics,Printers,COD,Florida,Miami,2023-04
+1202,4,Furniture,Sofas,EMI,Illinois,Peoria,2020-06
+2428,6,Electronics,Phones,Debit Card,Illinois,Springfield,2022-01
+247,5,Furniture,Bookcases,COD,California,Los Angeles,2023-11
+247,5,Furniture,Bookcases,COD,California,San Diego,2022-01
+1405,16,Furniture,Sofas,EMI,California,San Francisco,2020-09
+384,1,Electronics,Laptops,UPI,California,San Francisco,2020-09
+457,8,Furniture,Sofas,EMI,California,San Diego,2021-06
+936,6,Electronics,Laptops,Debit Card,Texas,Dallas,2024-08
+936,6,Electronics,Laptops,Debit Card,Ohio,Columbus,2022-07
+177,6,Electronics,Phones,UPI,California,Los Angeles,2024-01
+625,18,Office Supplies,Markers,EMI,California,Los Angeles,2024-01
+2114,17,Electronics,Laptops,EMI,Ohio,Cleveland,2021-05
+933,3,Electronics,Electronic Games,Credit Card,Texas,Dallas,2021-06
+3870,11,Electronics,Printers,Debit Card,Texas,Austin,2023-04
+125,4,Office Supplies,Paper,EMI,California,San Francisco,2021-07
+125,4,Office Supplies,Paper,EMI,California,San Francisco,2024-10
+1591,5,Furniture,Tables,Debit Card,New York,Buffalo,2021-10
+999,12,Electronics,Laptops,UPI,Ohio,Cincinnati,2024-02
+272,2,Electronics,Laptops,Debit Card,Texas,Houston,2021-03
+272,2,Electronics,Laptops,Debit Card,New York,Buffalo,2023-06
+142,20,Office Supplies,Markers,EMI,Illinois,Peoria,2021-08
+2661,7,Electronics,Laptops,EMI,Texas,Austin,2022-03
+135,18,Electronics,Printers,Credit Card,Florida,Miami,2024-02
+135,18,Electronics,Printers,Credit Card,California,San Diego,2022-08
+4339,3,Furniture,Sofas,Debit Card,Texas,Houston,2024-09
+4339,3,Furniture,Sofas,Debit Card,Ohio,Cincinnati,2020-04
+3301,15,Electronics,Electronic Games,Debit Card,Texas,Dallas,2023-03
+4585,7,Office Supplies,Paper,Credit Card,Ohio,Columbus,2020-08
+1335,15,Electronics,Electronic Games,COD,New York,New York City,2020-04
+1335,15,Electronics,Electronic Games,COD,Illinois,Springfield,2023-03
+76,9,Electronics,Phones,Debit Card,New York,Buffalo,2020-05
+3374,12,Furniture,Sofas,Debit Card,New York,Buffalo,2020-05
+1778,9,Office Supplies,Paper,Debit Card,Florida,Tampa,2024-10
+2317,10,Furniture,Sofas,Credit Card,California,San Diego,2022-06
+287,8,Office Supplies,Pens,COD,Ohio,Cleveland,2020-07
+287,8,Office Supplies,Pens,COD,Illinois,Chicago,2023-04
+1968,9,Office Supplies,Paper,Debit Card,Illinois,Chicago,2023-11
+3319,4,Furniture,Tables,UPI,Texas,Dallas,2023-11
+3319,4,Furniture,Tables,UPI,California,San Diego,2024-05
+103,12,Office Supplies,Binders,UPI,Ohio,Cincinnati,2024-05
+1001,14,Furniture,Sofas,Debit Card,Texas,Houston,2021-12
+1001,14,Furniture,Sofas,Debit Card,Ohio,Cincinnati,2025-01
+2088,14,Furniture,Tables,Debit Card,New York,Buffalo,2022-07
+2088,14,Furniture,Tables,Debit Card,Ohio,Cincinnati,2020-04
+1771,19,Office Supplies,Markers,UPI,Illinois,Springfield,2024-11
+1771,19,Office Supplies,Markers,UPI,Texas,Dallas,2020-04
+1057,15,Office Supplies,Pens,Credit Card,Texas,Houston,2023-10
+1057,15,Office Supplies,Pens,Credit Card,Ohio,Cleveland,2021-03
+893,12,Electronics,Laptops,Credit Card,Ohio,Cleveland,2024-09
+893,12,Electronics,Laptops,Credit Card,New York,New York City,2023-05
+893,12,Electronics,Laptops,Credit Card,Illinois,Chicago,2023-05
+2189,18,Electronics,Electronic Games,EMI,New York,New York City,2024-06
+2189,18,Electronics,Electronic Games,EMI,Florida,Orlando,2021-04
+2090,9,Office Supplies,Pens,Debit Card,California,San Diego,2025-01
+3634,3,Office Supplies,Markers,COD,Florida,Orlando,2020-12
+3634,3,Office Supplies,Markers,COD,California,San Diego,2022-10
+1334,16,Furniture,Bookcases,COD,Florida,Tampa,2021-10
+658,3,Office Supplies,Markers,UPI,Illinois,Chicago,2024-12
+2555,4,Electronics,Laptops,EMI,Texas,Austin,2022-05
+848,15,Furniture,Sofas,Debit Card,New York,New York City,2023-08
+848,15,Furniture,Sofas,Debit Card,New York,Buffalo,2023-07
+907,6,Electronics,Laptops,Credit Card,Texas,Dallas,2023-06
+3485,3,Electronics,Phones,Credit Card,New York,New York City,2023-03
+1330,3,Furniture,Tables,UPI,California,Los Angeles,2020-12
+1330,3,Furniture,Tables,UPI,Florida,Miami,2024-05
+54,14,Furniture,Tables,Debit Card,California,San Francisco,2021-05
+379,2,Office Supplies,Paper,UPI,Texas,Dallas,2024-04
+379,2,Office Supplies,Paper,UPI,Illinois,Peoria,2022-12
+2444,18,Electronics,Electronic Games,Debit Card,Ohio,Cleveland,2021-07
+2444,18,Electronics,Electronic Games,Debit Card,Illinois,Peoria,2020-03
+59,12,Office Supplies,Binders,UPI,Florida,Orlando,2020-08
+83,4,Furniture,Sofas,Credit Card,Illinois,Chicago,2022-02
+3042,9,Furniture,Bookcases,Debit Card,California,San Francisco,2021-06
+3042,9,Furniture,Bookcases,Debit Card,California,San Diego,2021-03
+246,5,Electronics,Electronic Games,Debit Card,Texas,Austin,2023-09
+3594,15,Furniture,Tables,Debit Card,New York,New York City,2024-07
+642,8,Electronics,Phones,EMI,New York,Rochester,2020-06
+642,8,Electronics,Phones,EMI,Texas,Austin,2022-12
+642,8,Electronics,Phones,EMI,New York,Buffalo,2020-08
+163,13,Office Supplies,Markers,UPI,Illinois,Chicago,2024-10
