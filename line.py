@@ -1,7 +1,6 @@
-#line
-
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 # Load dataset
 data = pd.read_csv('Sales Dataset.csv')
@@ -29,10 +28,10 @@ if sub_category != 'All':
 filtered_data['Year'] = pd.to_datetime(filtered_data['Year-Month']).dt.year
 filtered_data['Month'] = pd.to_datetime(filtered_data['Year-Month']).dt.strftime('%b')
 
-# Group by Month and Category
+# Group by Year, Month, and Category
 filtered_data_grouped = filtered_data.groupby(['Year', 'Month', 'Category'])['Profit'].sum().reset_index()
 
-# Year selection below the x-axis
+# Year selection placed below filters
 selected_year = st.selectbox("Select Year", ['All'] + sorted(filtered_data_grouped['Year'].unique().tolist()))
 
 if selected_year != 'All':
@@ -41,6 +40,25 @@ if selected_year != 'All':
 # Pivot data for plotting
 pivot_data = filtered_data_grouped.pivot_table(index='Month', columns='Category', values='Profit', fill_value=0)
 
-# Display chart with labels
-st.line_chart(pivot_data, use_container_width=True, y_axis_title="Profit")
+# Ensure correct month order
+month_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+               'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+pivot_data = pivot_data.reindex(month_order).dropna(how='all')
+
+# --- Visualization section (REPLACE WITH THIS CODE) ---
+fig = px.line(
+    pivot_data,
+    x=pivot_data.index,
+    y=pivot_data.columns,
+    labels={"value": "Profit", "Month": "Month"},
+    title="Monthly Profit by Category"
+)
+
+fig.update_layout(
+    yaxis=dict(range=[0, pivot_data.max().max() * 1.1]),
+    xaxis_title="Month",
+    yaxis_title="Profit"
+)
+
+st.plotly_chart(fig, use_container_width=True)
 st.dataframe(pivot_data.reset_index())
