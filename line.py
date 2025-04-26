@@ -40,22 +40,32 @@ if selected_year != 'All':
 # Pivot data for plotting
 pivot_data = filtered_data_grouped.pivot_table(index='Month', columns='Category', values='Profit', fill_value=0)
 
-# Ensure correct month order
+# Fix month order
 month_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-pivot_data = pivot_data.reindex(month_order).dropna(how='all')
+filtered_data_grouped['Month'] = pd.Categorical(filtered_data_grouped['Month'], categories=month_order, ordered=True)
+filtered_data_grouped = filtered_data_grouped.sort_values('Month')
 
-# --- Visualization section (REPLACE WITH THIS CODE) ---
+# Create interactive fancy chart
 fig = px.line(
-    pivot_data,
-    x=pivot_data.index,
-    y=pivot_data.columns,
-    labels={"value": "Profit", "Month": "Month"},
-    title="Monthly Profit by Category"
+    filtered_data_grouped,
+    x="Month",
+    y="Profit",
+    color="Category",
+    labels={"Profit": "Profit ($)", "Month": "Month"},
+    title="Monthly Profit by Category",
+    hover_data={
+        "Month": True,
+        "Profit": ":,.2f",
+        "Category": True
+    },
+    color_discrete_sequence=px.colors.qualitative.Bold
 )
 
+fig.update_traces(mode='lines+markers', line_shape='spline')
+
 fig.update_layout(
-    yaxis=dict(range=[0, pivot_data.max().max() * 1.1]),
+    yaxis=dict(range=[0, filtered_data_grouped['Profit'].max() * 1.1]),
     xaxis_title="Month",
     yaxis_title="Profit"
 )
