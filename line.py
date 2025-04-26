@@ -2,20 +2,40 @@
 
 import streamlit as st
 import pandas as pd
-import numpy as np
 
-st.write("Streamlit supports a wide range of data visualizations, including [Plotly, Altair, and Bokeh charts](https://docs.streamlit.io/develop/api-reference/charts). 📊 And with over 20 input widgets, you can easily make your data interactive!")
+# Load dataset
+data = pd.read_csv('Sales Dataset.csv')
 
-all_users = ["Alice", "Bob", "Charly"]
-with st.container(border=True):
-    users = st.multiselect("Users", all_users, default=all_users)
-    rolling_average = st.toggle("Rolling average")
+# Prepare unique filter options
+categories = data['Category'].unique()
 
-np.random.seed(42)
-data = pd.DataFrame(np.random.randn(20, len(users)), columns=users)
-if rolling_average:
-    data = data.rolling(7).mean().dropna()
+# Streamlit UI
+st.title("Sales Profit Analysis")
 
-tab1, tab2 = st.tabs(["Chart", "Dataframe"])
-tab1.line_chart(data, height=250)
-tab2.dataframe(data, height=250, use_container_width=True)
+# Filters
+selected_category = st.selectbox("Select Category", categories)
+
+# Filter data by selected category
+filtered_data = data[data['Category'] == selected_category]
+
+# Optional Sub-category filter
+sub_categories = filtered_data['Sub-Category'].unique()
+sub_category = st.selectbox("Select Sub-Category (Optional)", ['All'] + list(sub_categories))
+
+if sub_category != 'All':
+    filtered_data = filtered_data[filtered_data['Sub-Category'] == sub_category]
+
+# Year selection
+filtered_data['Year'] = pd.to_datetime(filtered_data['Year-Month']).dt.year
+selected_year = st.selectbox("Select Year", ['All'] + sorted(filtered_data['Year'].unique().tolist()))
+
+if selected_year != 'All':
+    filtered_data = filtered_data[filtered_data['Year'] == selected_year]
+
+# Group by Year-Month
+filtered_data_grouped = filtered_data.groupby('Year-Month')['Profit'].sum().reset_index()
+filtered_data_grouped = filtered_data_grouped.sort_values('Year-Month')
+
+# Display chart and data
+st.line_chart(filtered_data_grouped.set_index('Year-Month')['Profit'])
+st.dataframe(filtered_data_grouped)
