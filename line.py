@@ -46,6 +46,12 @@ month_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
 filtered_data_grouped['Month'] = pd.Categorical(filtered_data_grouped['Month'], categories=month_order, ordered=True)
 filtered_data_grouped = filtered_data_grouped.sort_values('Month')
 
+# Dropdown for line style
+line_style = st.selectbox("Select Line Style", ["Linear", "Smooth (Spline)"])
+
+# Checkbox for markers
+show_markers = st.checkbox("Show Markers (Dots)", value=True)
+
 # Create interactive fancy chart
 fig = px.line(
     filtered_data_grouped,
