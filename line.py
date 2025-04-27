@@ -105,11 +105,16 @@ for idx, category in enumerate(categories_in_filtered):
 
 # Update layout
 fig.update_layout(
-    yaxis=dict(range=[0, filtered_data_grouped['Profit'].max() * 1.1]),
+    xaxis = {
+        'categoryorder': 'array',
+        'categoryarray': filtered_data_grouped.sort_values('Date')['YearMonthLabel'].unique()
+    },
+    yaxis = {
+        'range': [0, filtered_data_grouped['Profit'].max() * 1.1]
+    },
     xaxis_title="Month-Year",
     yaxis_title="Profit"
 )
-
 # Show plot
 st.plotly_chart(fig, use_container_width=True)
 
