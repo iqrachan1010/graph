@@ -24,18 +24,21 @@ sub_category = st.selectbox("Select Sub-Category (Optional)", ['All'] + list(sub
 if sub_category != 'All':
     filtered_data = filtered_data[filtered_data['Sub-Category'] == sub_category]
 
-# Extract Year and Year-Month label
+# Create Date and YearMonthLabel columns
 filtered_data['Date'] = pd.to_datetime(filtered_data['Year-Month'])
 filtered_data['Year'] = filtered_data['Date'].dt.year
 filtered_data['YearMonthLabel'] = filtered_data['Date'].dt.strftime('%Y-%b')
 
-# Group by YearMonthLabel and Category
-filtered_data_grouped = filtered_data.groupby(['Year', 'YearMonthLabel', 'Category'])['Profit'].sum().reset_index()
+# Group by Date, YearMonthLabel, and Category
+filtered_data_grouped = filtered_data.groupby(['Date', 'YearMonthLabel', 'Category'])['Profit'].sum().reset_index()
+
+# Sort by Date
+filtered_data_grouped = filtered_data_grouped.sort_values('Date')
 
 # Year selection placed below filters
-selected_years = st.multiselect("Select Year(s)", sorted(filtered_data_grouped['Year'].unique()), default=sorted(filtered_data_grouped['Year'].unique()))
+selected_years = st.multiselect("Select Year(s)", sorted(filtered_data_grouped['Date'].dt.year.unique()), default=sorted(filtered_data_grouped['Date'].dt.year.unique()))
 
-filtered_data_grouped = filtered_data_grouped[filtered_data_grouped['Year'].isin(selected_years)]
+filtered_data_grouped = filtered_data_grouped[filtered_data_grouped['Date'].dt.year.isin(selected_years)]
 
 # Apply Moving Average Smoothing option
 smoothing_option = st.selectbox("Apply Moving Average Smoothing?", ["None", "3-month", "6-month"])
