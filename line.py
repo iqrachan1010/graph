@@ -89,7 +89,31 @@ fig.add_annotation(
     bordercolor="black",
     borderwidth=2
 )
+# Define color palette
+color_palette = px.colors.qualitative.Bold
+categories_in_filtered = filtered_data_grouped['Category'].unique()
 
+# Create a mapping of category to color
+category_color_map = dict(zip(categories_in_filtered, color_palette))
+
+# Add peak annotation for each category
+for idx, category in enumerate(categories_in_filtered):
+    df_category = filtered_data_grouped[filtered_data_grouped['Category'] == category]
+    if not df_category.empty:
+        peak_row = df_category.loc[df_category['Profit'].idxmax()]
+        fig.add_annotation(
+            x=peak_row['Month'],
+            y=peak_row['Profit'],
+            text=f"🏆 {category} Peak: ${peak_row['Profit']:,.0f}",
+            showarrow=True,
+            arrowhead=2,
+            ax=20,
+            ay=-30,
+            font=dict(size=10, color="black"),
+            bgcolor=category_color_map.get(category, "yellow"),
+            bordercolor="black",
+            borderwidth=1
+        )
 # Update layout
 fig.update_layout(
     yaxis=dict(range=[0, filtered_data_grouped['Profit'].max() * 1.1]),
