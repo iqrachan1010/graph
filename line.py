@@ -1,11 +1,12 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from plotly.colors import n_colors
 
-# --- Streamlit App Config ---
+# --- App Config ---
 st.set_page_config(page_title="Sales Profit Analysis", layout="wide")
 
-# --- Load and Prepare Data ---
+# --- Load Data ---
 @st.cache_data
 def load_data():
     df = pd.read_csv('Sales Dataset.csv')
@@ -19,96 +20,113 @@ data = load_data()
 # --- Title ---
 st.title("Sales Profit Analysis")
 
-# --- Filters: Category & Sub-Category ---
+# --- Filters ---
 categories = data['Category'].unique()
 selected_categories = st.multiselect("Select Category(s)", categories, default=categories)
 filtered = data[data['Category'].isin(selected_categories)]
 
-sub_cats = filtered['Sub-Category'].unique()
-selected_sub = st.multiselect("Select Sub-Category(s) (Optional)", sub_cats)
-if selected_sub:
-    filtered = filtered[filtered['Sub-Category'].isin(selected_sub)]
+subcats = filtered['Sub-Category'].unique()
+selected_subcats = st.multiselect("Select Sub-Category(s)", subcats, default=subcats)
+filtered = filtered[filtered['Sub-Category'].isin(selected_subcats)]
 
-# --- Filter by Year (mandatory) ---
-available_years = sorted(filtered['Year'].unique())
-selected_year = st.selectbox("Select Year", available_years)
-filtered = filtered[filtered['Year'] == selected_year]
-
-# --- Define Month Order ---
-month_order = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-
-# --- Line Chart Data Preparation ---
-line_data = (
-    filtered.groupby(['Month','Category'])['Profit']
+# --- Prepare Monthly Data for Line Chart ---
+filtered_line = (
+    filtered
+    .groupby(['Date','Month','Category','Sub-Category'])['Profit']
     .sum()
     .reset_index()
+    .sort_values('Date')
 )
-line_data['Month'] = pd.Categorical(line_data['Month'], categories=month_order, ordered=True)
-line_data = line_data.sort_values('Month')
 
-# --- Line Chart Controls ---
-line_style = st.selectbox("Select Line Style", ["Linear", "Smooth (Spline)"])
-show_markers = st.checkbox("Show Markers (Dots)", value=True)
+# --- Layout: Chart and Controls Side by Side ---
+available_years = sorted(filtered_line['Date'].dt.year.unique())
+col_chart, col_controls = st.columns([4,1], gap="small")
 
-# --- Line Chart ---
-line_fig = px.line(
-    line_data,
-    x="Month",
-    y="Profit",
-    color="Category",
-    labels={"Profit": "Profit ($)", "Month": "Month"},
-    title="Monthly Profit by Category",
-    color_discrete_sequence=px.colors.qualitative.Bold
+with col_controls:
+    selected_year = st.selectbox("Select Year", available_years)
+    line_style = st.selectbox("Line Style", ["Linear", "Smooth (Spline)"])
+    show_markers = st.checkbox("Show Markers", value=True)
+
+# Filter to selected year
+df_year = filtered_line[filtered_line['Date'].dt.year == selected_year]
+
+# --- Generate Sub-Category Color Shades ---
+cats = df_year['Category'].unique()
+base_colors = px.colors.qualitative.Bold
+cat_color_map = {cat: base_colors[i % len(base_colors)] for i, cat in enumerate(cats)}
+sub_color_map = {}
+for cat in cats:
+    sub_list = df_year[df_year['Category'] == cat]['Sub-Category'].unique()
+    shades = n_colors('rgb(255,255,255)', cat_color_map[cat], len(sub_list), colortype='rgb')
+    for sub, shade in zip(sub_list, shades):
+        sub_color_map[sub] = shade
+
+# --- Plot Line Chart ---
+fig = px.line(
+    df_year,
+    x='Month',
+    y='Profit',
+    color='Sub-Category',
+    labels={'Profit':'Profit ($)', 'Month':'Month'},
+    title=f"Monthly Profit by Sub-Category ({selected_year})",
+    color_discrete_map=sub_color_map,
+    hover_data={'Month':True, 'Profit':':,.2f', 'Sub-Category':True}
 )
-line_fig.update_traces(
+fig.update_traces(
     mode='lines+markers' if show_markers else 'lines',
     line_shape='spline' if line_style == "Smooth (Spline)" else 'linear'
 )
-line_fig.update_layout(
-    xaxis={'categoryorder': 'array', 'categoryarray': month_order},
-    yaxis={'range': [0, line_data['Profit'].max() * 1.1]},
-    xaxis_title="Month",
-    yaxis_title="Profit"
+# Order x-axis months Jan to Dec
+month_order = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+fig.update_layout(
+    xaxis={'categoryorder':'array', 'categoryarray':month_order},
+    yaxis={'range':[0, df_year['Profit'].max() * 1.1]},
+    xaxis_title='Month',
+    yaxis_title='Profit'
 )
-st.plotly_chart(line_fig, use_container_width=True)
 
-# --- Profit Table by Month ---
-st.subheader("📋 Profit Table by Month")
-table = (
-    filtered.groupby(['Month','Category'])['Profit']
+with col_chart:
+    st.plotly_chart(fig, use_container_width=True)
+
+# --- Bar Chart ---
+st.subheader("Monthly Profit Comparison by Category (Bar)")
+bar_data = (
+    filtered
+    .groupby(['Year','Month','Category'])['Profit']
     .sum()
     .reset_index()
 )
-table['Month'] = pd.Categorical(table['Month'], categories=month_order, ordered=True)
-table = table.sort_values(['Month','Category'])
-st.dataframe(table)
 
-# --- Bar Chart ---
-st.subheader("📊 Monthly Profit Comparison by Category (Bar Chart)")
+# Order month
+bar_data['Month'] = pd.Categorical(bar_data['Month'], categories=month_order, ordered=True)
+bar_data = bar_data.sort_values(['Year','Month'])
+
 bar_fig = px.bar(
-    table,
-    x="Month",
-    y="Profit",
-    color="Category",
-    barmode="group",
-    labels={"Profit": "Profit ($)", "Month": "Month"},
-    title="Monthly Profit by Category",
+    bar_data,
+    x='Month',
+    y='Profit',
+    color='Category',
+    barmode='group',
+    labels={'Profit':'Profit ($)', 'Month':'Month'},
+    title=f"Monthly Profit by Category ({selected_year})",
     color_discrete_sequence=px.colors.qualitative.Bold
 )
 bar_fig.update_layout(
-    xaxis={'categoryorder': 'array', 'categoryarray': month_order},
-    yaxis={'range': [0, table['Profit'].max() * 1.1]},
-    xaxis_title="Month",
-    yaxis_title="Profit"
+    yaxis={'range':[0, bar_data['Profit'].max() * 1.1]},
+    xaxis_title='Month',
+    yaxis_title='Profit'
 )
 st.plotly_chart(bar_fig, use_container_width=True)
 
-# --- Download Table as CSV ---
-st.subheader("Download Profit Data as CSV")
-csv = table.to_csv(index=False).encode('utf-8')
-st.download_button(
-    label="Download CSV",
-    data=csv,
-    file_name='profit_data.csv',
-    mime='text/csv'
+# --- Profit Table & Download ---
+st.subheader("Profit Table by Year and Month")
+table = (
+    df_year
+    .groupby(['Year', 'Month'])['Profit']
+    .sum()
+    .reset_index()
+    .sort_values(['Year','Month'])
 )
+st.dataframe(table)
+csv = table.to_csv(index=False).encode('utf-8')
+st.download_button("Download Table as CSV", csv, "profit_table.csv", "text/csv")
