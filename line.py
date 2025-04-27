@@ -112,25 +112,22 @@ st.subheader("📊 Monthly Profit by Category (Bar Chart)")
 # Prepare bar chart data
 bar_data = (
     filtered_data
-    .groupby(['Month', 'Category'])['Profit']
+    .groupby(['YearMonthLabel', 'Category'])['Profit']
     .sum()
     .reset_index()
 )
 
-# Order months properly
-month_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
-               'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-bar_data['Month'] = pd.Categorical(bar_data['Month'], categories=month_order, ordered=True)
-bar_data = bar_data.sort_values('Month')
+# Sort YearMonthLabel properly
+bar_data = bar_data.sort_values('YearMonthLabel')
 
 # Create bar chart
 bar_fig = px.bar(
     bar_data,
-    x="Month",
+    x="YearMonthLabel",
     y="Profit",
     color="Category",
     barmode="group",
-    labels={"Profit": "Profit ($)", "Month": "Month"},
+    labels={"Profit": "Profit ($)", "YearMonthLabel": "Month-Year"},
     title="Monthly Profit Comparison by Category",
     color_discrete_sequence=px.colors.qualitative.Bold
 )
