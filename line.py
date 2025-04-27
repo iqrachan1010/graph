@@ -11,9 +11,6 @@ categories = data['Category'].unique()
 # Streamlit UI
 st.title("Sales Profit Analysis")
 
-# Smoothing option
-smoothing_option = st.selectbox("Apply Moving Average Smoothing?", ["None", "7-month", "30-month"])
-
 # Filters
 selected_categories = st.multiselect("Select Category(s)", categories, default=categories)
 
@@ -27,14 +24,22 @@ sub_category = st.selectbox("Select Sub-Category (Optional)", ['All'] + list(sub
 if sub_category != 'All':
     filtered_data = filtered_data[filtered_data['Sub-Category'] == sub_category]
 
-# Extract Year and Month
-filtered_data['Year'] = pd.to_datetime(filtered_data['Year-Month']).dt.year
-filtered_data['YearMonthLabel'] = pd.to_datetime(filtered_data['Year-Month']).dt.strftime('%Y-%b')
+# Extract Year and Year-Month label
+filtered_data['Date'] = pd.to_datetime(filtered_data['Year-Month'])
+filtered_data['Year'] = filtered_data['Date'].dt.year
+filtered_data['YearMonthLabel'] = filtered_data['Date'].dt.strftime('%Y-%b')
 
-# Group by Year, YearMonthLabel, and Category
+# Group by YearMonthLabel and Category
 filtered_data_grouped = filtered_data.groupby(['Year', 'YearMonthLabel', 'Category'])['Profit'].sum().reset_index()
 
-# Apply smoothing if selected
+# Year selection placed below filters
+selected_years = st.multiselect("Select Year(s)", sorted(filtered_data_grouped['Year'].unique()), default=sorted(filtered_data_grouped['Year'].unique()))
+
+filtered_data_grouped = filtered_data_grouped[filtered_data_grouped['Year'].isin(selected_years)]
+
+# Apply Moving Average Smoothing option
+smoothing_option = st.selectbox("Apply Moving Average Smoothing?", ["None", "3-month", "6-month"])
+
 if smoothing_option != "None":
     window_size = int(smoothing_option.split('-')[0])
     filtered_data_grouped['Profit'] = (
@@ -42,12 +47,6 @@ if smoothing_option != "None":
         .groupby('Category')['Profit']
         .transform(lambda x: x.rolling(window=window_size, min_periods=1).mean())
     )
-
-# Year selection placed below filters
-selected_year = st.selectbox("Select Year", ['All'] + sorted(filtered_data_grouped['Year'].unique().tolist()))
-
-if selected_year != 'All':
-    filtered_data_grouped = filtered_data_grouped[filtered_data_grouped['Year'] == selected_year]
 
 # Dropdown for line style
 line_style = st.selectbox("Select Line Style", ["Linear", "Smooth (Spline)"])
