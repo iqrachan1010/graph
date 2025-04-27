@@ -32,7 +32,10 @@ filtered_data['YearMonthLabel'] = filtered_data['Date'].dt.strftime('%Y-%b')
 
 # Year selection
 available_years = sorted(filtered_data['Year'].unique())
-selected_years = st.multiselect("Select Year(s)", available_years, default=available_years)
+selected_years = st.multiselect("Select Year(s)", available_years)
+if not selected_years:
+    st.warning("⚠️ Please select at least one year to continue.")
+    st.stop()
 
 # Filter data based on selected years
 filtered_data = filtered_data[filtered_data['Year'].isin(selected_years)]
@@ -103,6 +106,37 @@ table_data = (
     .sort_values(['Year', 'Month'])
 )
 st.dataframe(table_data)
+
+st.subheader("📊 Monthly Profit by Category (Bar Chart)")
+
+# Prepare bar chart data
+bar_data = (
+    filtered_data
+    .groupby(['Month', 'Category'])['Profit']
+    .sum()
+    .reset_index()
+)
+
+# Order months properly
+month_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+               'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+bar_data['Month'] = pd.Categorical(bar_data['Month'], categories=month_order, ordered=True)
+bar_data = bar_data.sort_values('Month')
+
+# Create bar chart
+bar_fig = px.bar(
+    bar_data,
+    x="Month",
+    y="Profit",
+    color="Category",
+    barmode="group",
+    labels={"Profit": "Profit ($)", "Month": "Month"},
+    title="Monthly Profit Comparison by Category",
+    color_discrete_sequence=px.colors.qualitative.Bold
+)
+
+st.plotly_chart(bar_fig, use_container_width=True)
+
 
 # 📥 Download Table as CSV
 csv = table_data.to_csv(index=False).encode('utf-8')
