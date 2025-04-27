@@ -99,4 +99,4 @@ fig.update_layout(
 
 # Show plot
 st.plotly_chart(fig, use_container_width=True)
-st.dataframe(pivot_data.reset_index())
+st.dataframe(filtered_data_grouped)
