@@ -22,21 +22,22 @@ if sub_category != 'All':
 # --- Date Processing ---
 filtered_data['Date'] = pd.to_datetime(filtered_data['Year-Month'])
 filtered_data['Year'] = filtered_data['Date'].dt.year
-filtered_data['Month'] = filtered_data['Date'].dt.strftime('%b')
 filtered_data['YearMonthLabel'] = filtered_data['Date'].dt.strftime('%Y-%b')
 
 # --- Year Selection ---
 available_years = sorted(filtered_data['Year'].unique())
 selected_years = st.multiselect("Select Year(s)", available_years)
+
 if not selected_years:
     st.warning("⚠️ Please select at least one year to continue.")
     st.stop()
+
 filtered_data = filtered_data[filtered_data['Year'].isin(selected_years)]
 
-# --- Moving Average Option ---
+# --- Moving Average Smoothing ---
 smoothing_option = st.selectbox("Apply Moving Average Smoothing?", ["None", "3-month", "6-month"])
 
-# --- Line Chart Preparation ---
+# --- Prepare Line Chart Data ---
 filtered_data_grouped = (
     filtered_data
     .groupby(['Date', 'YearMonthLabel', 'Category'])['Profit']
@@ -53,11 +54,11 @@ if smoothing_option != "None":
         .transform(lambda x: x.rolling(window=window_size, min_periods=1).mean())
     )
 
-# --- Line Chart Display ---
+# --- Line Chart ---
 line_style = st.selectbox("Select Line Style", ["Linear", "Smooth (Spline)"])
 show_markers = st.checkbox("Show Markers (Dots)", value=True)
 
-line_fig = px.line(
+fig = px.line(
     filtered_data_grouped,
     x="YearMonthLabel",
     y="Profit",
@@ -68,55 +69,32 @@ line_fig = px.line(
     color_discrete_sequence=px.colors.qualitative.Bold
 )
 
-line_fig.update_traces(
+fig.update_traces(
     mode='lines+markers' if show_markers else 'lines',
     line_shape='spline' if line_style == "Smooth (Spline)" else 'linear'
 )
 
-line_fig.update_layout(
+fig.update_layout(
     xaxis={'categoryorder': 'array', 'categoryarray': filtered_data_grouped['YearMonthLabel'].unique()},
     yaxis=dict(range=[0, filtered_data_grouped['Profit'].max() * 1.1]),
     xaxis_title="Month-Year",
     yaxis_title="Profit"
 )
 
-st.plotly_chart(line_fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True)
 
 # --- Table View ---
 st.subheader("📋 Profit Table by Year and Month")
+
 table_data = (
     filtered_data
-    .groupby(['Year', 'Month'])['Profit']
+    .groupby(['Year', filtered_data['Date'].dt.strftime('%b')])['Profit']
     .sum()
     .reset_index()
-    .sort_values(['Year', 'Month'])
+    .rename(columns={'Date': 'Month'})
 )
 
 st.dataframe(table_data)
-
-# --- Bar Chart ---
-st.subheader("📊 Monthly Profit by Category (Bar Chart)")
-
-bar_data = (
-    filtered_data
-    .groupby(['YearMonthLabel', 'Category'])['Profit']
-    .sum()
-    .reset_index()
-    .sort_values('YearMonthLabel')
-)
-
-bar_fig = px.bar(
-    bar_data,
-    x="YearMonthLabel",
-    y="Profit",
-    color="Category",
-    barmode="group",
-    labels={"Profit": "Profit ($)", "YearMonthLabel": "Month-Year"},
-    title="Monthly Profit Comparison by Category",
-    color_discrete_sequence=px.colors.qualitative.Bold
-)
-
-st.plotly_chart(bar_fig, use_container_width=True)
 
 # --- Download Table as CSV ---
 csv = table_data.to_csv(index=False).encode('utf-8')
