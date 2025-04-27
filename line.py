@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# --- App Config ---
+# --- App Configuration ---
 st.set_page_config(page_title="Sales Profit Analysis", layout="wide")
 
 # --- Load and Prepare Data ---
@@ -17,130 +17,131 @@ def load_data():
 data = load_data()
 month_order = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 
-# --- Title ---
-st.title("Sales Profit Analysis")
-
-# --- Filters ---
+# --- Sidebar Filters ---
+st.sidebar.header("Filters")
+# Category selector
 categories = sorted(data['Category'].unique())
-selected_categories = st.multiselect("Select Category(s)", categories, default=categories)
+selected_categories = st.sidebar.multiselect("Category", categories, default=categories)
 filtered = data[data['Category'].isin(selected_categories)]
-
+# Sub-Category selector (optional)
 sub_cats = sorted(filtered['Sub-Category'].unique())
-selected_subcats = st.multiselect("Select Sub-Category(s) (Optional)", ['All'] + sub_cats, default=['All'])
+selected_subcats = st.sidebar.multiselect("Sub-Category (Optional)", ['All'] + sub_cats, default=['All'])
 if 'All' not in selected_subcats:
     filtered = filtered[filtered['Sub-Category'].isin(selected_subcats)]
-
+# Year selector
 years = sorted(filtered['Year'].unique())
-selected_years = st.multiselect("Select Year(s)", ['All'] + years, default=['All'])
+years_options = ['All'] + years
+selected_years = st.sidebar.multiselect("Year(s)", years_options, default=['All'])
 if 'All' in selected_years:
-    selected_years = years
-elif not selected_years:
-    st.warning("⚠️ Please select at least one year.")
+    sel_years = years
+else:
+    sel_years = [int(y) for y in selected_years]
+if not sel_years:
+    st.sidebar.warning("Please select at least one year.")
     st.stop()
-filtered = filtered[filtered['Year'].isin(selected_years)]
+filtered = filtered[filtered['Year'].isin(sel_years)]
 
-# --- Bar Chart Order Option ---
-order_option = st.selectbox(
-    "Order bars by total profit:",
-    ["Descending", "Ascending"],
-    index=0
+# --- Bar Chart Order Control ---
+st.sidebar.header("Bar Chart Order")
+order_opt = st.sidebar.radio(
+    label="Order by total profit",
+    options=["⬇️ Descending","⬆️ Ascending"],
+    index=0,
+    key="bar_order",
+    label_visibility='collapsed'
 )
+descending = True if order_opt == "⬇️ Descending" else False
 
-# --- Bar Chart ---
+# --- Main Content ---
+st.title("Sales Profit Analysis")
+
+# --- Annual Bar Chart ---
 st.subheader("Annual Profit by Category")
-# Sorting control via up/down arrows
-tab_bar, space = st.columns([9,1], gap='small')
-with space:
-    order_arrow = st.radio("", ["⬇️","⬆️"], index=0, horizontal=True, label_visibility='collapsed')
-# Determine sorting order
-descending = True if order_arrow == "⬇️" else False
-
-# Aggregate for bar chart
-grouped_bar = (
-    filtered
-    .groupby(['Year','Category'])['Profit']
-    .sum()
-    .reset_index()
+# Aggregate bar data
+yearly = (
+    filtered.groupby(['Year','Category'])['Profit']
+    .sum().reset_index()
 )
-# Sort years by total profit ascending or descending
-year_totals = (grouped_bar.groupby('Year')['Profit'].sum()
-               .sort_values(ascending=not descending)
-               .index.astype(str)
-               .tolist())
-# Convert Year to string for categorical axis
-grouped_bar['Year'] = grouped_bar['Year'].astype(str)
-
-# Create bar chart with proper ordering
+# Determine year order by totals
+year_totals = yearly.groupby('Year')['Profit'].sum().sort_values(ascending=not descending)
+sorted_years = year_totals.index.astype(str).tolist()
+yearly['Year'] = yearly['Year'].astype(str)
+# Plot bar chart
 fig_bar = px.bar(
-    grouped_bar,
-    x='Year', y='Profit', color='Category', barmode='group',
-    labels={'Profit':'Profit ($)','Year':'Year'},
-    category_orders={'Year': year_totals},
+    yearly,
+    x='Year',
+    y='Profit',
+    color='Category',
+    barmode='group',
+    labels={'Year':'Year','Profit':'Profit ($)'},
+    category_orders={'Year': sorted_years},
     color_discrete_sequence=px.colors.qualitative.Bold
 )
-# Set axes to start at 0 and add axis labels
 fig_bar.update_layout(
-    xaxis_title='Year',
-    yaxis_title='Profit',
-    yaxis=dict(range=[0, grouped_bar['Profit'].max()*1.1])
+    xaxis={'categoryorder':'array','categoryarray': sorted_years},
+    yaxis=dict(range=[0, yearly['Profit'].max() * 1.1])
 )
-
 st.plotly_chart(fig_bar, use_container_width=True)
 
-# --- Line Chart ---
-st.subheader("Monthly Profit Trend")
-if 'All' in selected_subcats:
-    group_field = 'Category'
-else:
-    group_field = 'Sub-Category'
+# --- Line Chart Options ---
+st.sidebar.header("Line Chart Options")
+line_style = st.sidebar.selectbox(
+    label="Line Style",
+    options=['Linear','Smooth (Spline)'],
+    index=0,
+    key="line_style"
+)
+show_markers = st.sidebar.checkbox(
+    label="Show Markers",
+    value=True,
+    key="show_markers"
+)
 
-grouped_line = (
-    filtered
-    .groupby(['Month', group_field])['Profit']
-    .sum()
-    .reset_index()
+# --- Monthly Line Chart ---
+st.subheader("Monthly Profit Trend")
+# Choose grouping field
+group_field = 'Category' if 'All' in selected_subcats else 'Sub-Category'
+line_data = (
+    filtered.groupby(['Month', group_field])['Profit']
+    .sum().reset_index()
 )
 # Order months
-grouped_line['Month'] = pd.Categorical(grouped_line['Month'], categories=month_order, ordered=True)
-grouped_line = grouped_line.sort_values('Month')
-
-# Layout: selectors beside chart
-col1, col2 = st.columns([4, 1])
-with col2:
-    line_style = st.selectbox("Line Style", ['Linear', 'Smooth (Spline)'])
-    show_markers = st.checkbox("Show Markers", True)
-with col1:
-    fig_line = px.line(
-        grouped_line,
-        x='Month', y='Profit', color=group_field,
-        labels={'Month':'Month','Profit':'Profit ($)'},
-        color_discrete_sequence=px.colors.qualitative.Bold
-    )
-    fig_line.update_traces(
-        mode='lines+markers' if show_markers else 'lines',
-        line_shape='spline' if line_style == 'Smooth (Spline)' else 'linear'
-    )
-    fig_line.update_layout(
-        xaxis_title='Month',
-        yaxis_title='Profit',
-        yaxis=dict(range=[0, grouped_line['Profit'].max() * 1.1]),
-        xaxis=dict(categoryorder='array', categoryarray=month_order)
-    )
-    st.plotly_chart(fig_line, use_container_width=True)
-
-# --- Table View ---
-st.subheader("Profit Table by Selection")
- table = (
-    filtered
-    .groupby(['Year', 'Month'])['Profit']
-    .sum()
-    .reset_index()
+line_data['Month'] = pd.Categorical(line_data['Month'], categories=month_order, ordered=True)
+line_data = line_data.sort_values('Month')
+# Plot line chart
+fig_line = px.line(
+    line_data,
+    x='Month',
+    y='Profit',
+    color=group_field,
+    labels={'Month':'Month','Profit':'Profit ($)'},
+    category_orders={'Month': month_order},
+    color_discrete_sequence=px.colors.qualitative.Bold
 )
-# Order table by Year then Month
-table['Month'] = pd.Categorical(table['Month'], categories=month_order, ordered=True)
-table = table.sort_values(['Year', 'Month'])
-st.dataframe(table)
+fig_line.update_traces(
+    mode='lines+markers' if show_markers else 'lines',
+    line_shape='spline' if line_style=='Smooth (Spline)' else 'linear'
+)
+fig_line.update_layout(
+    yaxis=dict(range=[0, line_data['Profit'].max() * 1.1])
+)
+st.plotly_chart(fig_line, use_container_width=True)
 
-# --- Download CSV ---
-csv = table.to_csv(index=False).encode('utf-8')
-st.download_button("Download Table as CSV", csv, "profit_table.csv", "text/csv")
+# --- Table View & Download ---
+st.subheader("Profit Table by Selection")
+table_df = (
+    filtered.groupby(['Year','Month'])['Profit']
+    .sum().reset_index()
+)
+# Sort table by year then month
+table_df['Month'] = pd.Categorical(table_df['Month'], categories=month_order, ordered=True)
+table_df = table_df.sort_values(['Year','Month'])
+st.dataframe(table_df)
+# Download CSV
+tbl_csv = table_df.to_csv(index=False).encode('utf-8')
+st.download_button(
+    label="Download Table as CSV",
+    data=tbl_csv,
+    file_name='profit_table.csv',
+    mime='text/csv'
+)
