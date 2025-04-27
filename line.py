@@ -48,33 +48,43 @@ order_option = st.selectbox(
 
 # --- Bar Chart ---
 st.subheader("Annual Profit by Category")
+# Sorting control via up/down arrows
+tab_bar, space = st.columns([9,1], gap='small')
+with space:
+    order_arrow = st.radio("", ["⬇️","⬆️"], index=0, horizontal=True, label_visibility='collapsed')
+# Determine sorting order
+descending = True if order_arrow == "⬇️" else False
+
+# Aggregate for bar chart
 grouped_bar = (
     filtered
-    .groupby(['Year', 'Category'])['Profit']
+    .groupby(['Year','Category'])['Profit']
     .sum()
     .reset_index()
 )
-# Convert Year to string for x-axis
-grouped_bar['Year_str'] = grouped_bar['Year'].astype(str)
-# Compute total profit per year
-year_totals = grouped_bar.groupby('Year_str')['Profit'].sum()
-# Sort years according to order_option
-sorted_years = (
-    year_totals.sort_values(ascending=(order_option == "Ascending")).index.tolist()
-)
+# Sort years by total profit ascending or descending
+year_totals = (grouped_bar.groupby('Year')['Profit'].sum()
+               .sort_values(ascending=not descending)
+               .index.astype(str)
+               .tolist())
+# Convert Year to string for categorical axis
+grouped_bar['Year'] = grouped_bar['Year'].astype(str)
 
+# Create bar chart with proper ordering
 fig_bar = px.bar(
     grouped_bar,
-    x='Year_str', y='Profit', color='Category', barmode='group',
-    labels={'Year_str':'Year', 'Profit':'Profit ($)'},
+    x='Year', y='Profit', color='Category', barmode='group',
+    labels={'Profit':'Profit ($)','Year':'Year'},
+    category_orders={'Year': year_totals},
     color_discrete_sequence=px.colors.qualitative.Bold
 )
+# Set axes to start at 0 and add axis labels
 fig_bar.update_layout(
     xaxis_title='Year',
     yaxis_title='Profit',
-    yaxis=dict(range=[0, grouped_bar['Profit'].max() * 1.1]),
-    xaxis=dict(categoryorder='array', categoryarray=sorted_years)
+    yaxis=dict(range=[0, grouped_bar['Profit'].max()*1.1])
 )
+
 st.plotly_chart(fig_bar, use_container_width=True)
 
 # --- Line Chart ---
@@ -120,7 +130,7 @@ with col1:
 
 # --- Table View ---
 st.subheader("Profit Table by Selection")
-table = (
+ table = (
     filtered
     .groupby(['Year', 'Month'])['Profit']
     .sum()
